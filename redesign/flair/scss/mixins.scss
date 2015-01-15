@@ -1,0 +1,81 @@
+@mixin linear-gradient($from, $to) {
+	/* fallback */
+	background-color: $to;
+	/* Mozilla Firefox */
+	background-image:-moz-linear-gradient($from, $to);
+	/* Opera */
+	background-image: -o-linear-gradient($from, $to);
+	/* Webkit (Safari 4+, Chrome 1+) */
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, $from), color-stop(1, $to));
+	/* Webkit (Chrome 11+) */
+	background-image: -webkit-linear-gradient($from, $to);
+	/* IE10 */
+	background-image: -ms-linear-gradient($from, $to);
+	/* W3C */
+	background-image: linear-gradient($from, $to);
+}
+
+@mixin border-radius ($top-left, $top-right, $bottom-right, $bottom-left) {
+	-webkit-border-top-left-radius: $top-left;
+	-webkit-border-top-right-radius: $top-right;
+	-webkit-border-bottom-right-radius: $bottom-right;
+	-webkit-border-bottom-left-radius: $bottom-left;
+	-moz-border-radius-topleft: $top-left;
+	-moz-border-radius-topright: $top-right;
+	-moz-border-radius-bottomright: $bottom-right;
+	-moz-border-radius-bottomleft: $bottom-left;
+	border-top-left-radius: $top-left;
+	border-top-right-radius: $top-right;
+	border-bottom-right-radius: $bottom-right;
+	border-bottom-left-radius: $bottom-left;
+}
+
+@mixin placeholder-size ($font-size) {
+	::-webkit-input-placeholder {
+		font-size: $font-size;
+	}
+				
+	:-moz-placeholder {
+		font-size: $font-size;
+	}
+	
+	::-moz-placeholder {
+		font-size: $font-size;
+	}
+	
+	:-ms-input-placeholder {
+		font-size: $font-size;
+	}
+}
+
+@mixin placeholder-transform ($text-transform) {
+	::-webkit-input-placeholder {
+		text-transform: $text-transform;
+	}
+				
+	:-moz-placeholder {
+		text-transform: $text-transform;
+	}
+	
+	::-moz-placeholder {
+		text-transform: $text-transform;
+	}
+	
+	:-ms-input-placeholder {
+		text-transform: $text-transform;
+	}
+}
+
+@mixin transition ($property, $duration, $timing) {
+	-webkit-transition: $property $duration $timing;
+	-moz-transition: $property $duration $timing;
+	-o-transition: $property $duration $timing;
+	transition: $property $duration $timing;
+}
+
+@mixin background-cover ($size) {
+	-webkit-background-size: $size;
+	-moz-background-size: $size;
+	-o-background-size: $size;
+	background-size: $size;
+}

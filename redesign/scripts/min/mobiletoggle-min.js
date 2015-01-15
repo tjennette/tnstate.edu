@@ -1,0 +1,1 @@
+$(window).width()<=640&&$("#site-header").hide(),$(window).resize(function(){$(window).width()>640&&$("#site-header").show()}),$(".toggle-mobile").click(function(){$("#site-header").is(":hidden")?$("#site-header").slideDown():$("#site-header").slideUp()});

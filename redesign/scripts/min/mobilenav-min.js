@@ -1,0 +1,1 @@
+$(document).ready(function(){$("#site-header").hide(),$(".mobile-close a").click(function(){$("#site-header").slideUp()}),$(".mobile-nav").click(function(){$("#site-header").is(":hidden")?$("#site-header").slideDown():$("#site-header").slideUp()}),$(window).width()>640&&$("#site-header").show(),$(window).resize(function(){$(window).width()>640&&$("#site-header").show()})});

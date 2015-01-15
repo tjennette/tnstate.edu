@@ -1,0 +1,14 @@
+/* The Tennessee State University site is maintained by the university’s Office of Creative Services, Media Relations, and Publications */
+/* www.tnstate.edu */
+
+/* TEAM */
+Web Designer: Joshua Holly
+Web Developer/Webmaster: Tracy Jennette
+Site: www.tnstate.edu
+Location: Nashville, TN
+
+/* SITE */
+Last Update: 2014/09/26
+Standards: HTML5, CSS3, JS
+Components: Modernizr, jQuery, Zurb Foundation, SASS
+Software: Coda2, Adobe Typekit

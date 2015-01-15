@@ -1,0 +1,93 @@
+section.prime-carousel {
+	width: 100%;
+	
+	div.prime-slide{
+		
+		div.slide-content {
+			position: absolute;
+			z-index: 100;
+			color: white;
+			width: 100%;
+			background-color: rgba(10,10,10,.5);
+			padding:3%;
+			bottom: 0;
+			box-sizing: border-box;
+			
+			@media (min-width: 40.0625em) {
+				padding: 3% 9%;
+			}
+			
+			h1 {
+				margin: 0;
+				color: white;
+				margin-bottom: .75em;
+				font-style: italic;
+				
+				@media (min-width: 40.0625em) {
+					margin-bottom: auto;
+				}
+			}
+			
+			p {
+				display: none;
+				
+				@media (min-width: 40.0625em) {
+					display: inherit;
+				}
+			}
+			
+			button {
+				@include linear-gradient ($gradient-blue, $light-blue);
+				border: none;
+				padding: .75em 1.5em;
+				
+				a {
+					font-family: $font-sans;
+					text-transform: uppercase;
+					text-decoration: none;
+					color: white;
+					font-size: .875em;
+				}
+			}
+		}
+		
+		picture {
+			
+		}
+	}
+	
+	div.owl-controls {
+		position: absolute;
+		z-index: 200;
+		width: 100%;
+		top: 50%;
+		
+		div.owl-nav {
+			text-indent: -500em;
+			overflow: hidden;
+			
+			div.owl-prev {
+				display: block;
+				width: 25px;
+				height: 30px;
+				float: left;
+				background-image: url(../../images/svg/leftarrow.svg);
+				background-repeat: no-repeat;
+				background-position: center center;
+				background-size: 16px auto;
+			}
+			
+			div.owl-next {
+				display: block;
+				width: 25px;
+				height: 30px;
+				overflow: hidden;
+				float: right;
+				background-image: url(../../images/svg/rightarrow.svg);
+				background-repeat: no-repeat;
+				background-position: center center;
+				background-size: 16px auto;
+			}
+		}
+	}
+}

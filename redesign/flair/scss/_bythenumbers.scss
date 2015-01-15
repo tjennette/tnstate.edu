@@ -1,0 +1,147 @@
+section.by-the-numbers {
+	height: 65px;
+	background-image: url(../../images/png/bythenumbersbg.png);
+	background-repeat: repeat-x;
+	color: white;
+	display: none;
+	
+	@media (min-width: 40.0625em) {
+		display: inherit;
+	}
+		
+	.wrapper {
+		padding: 0;
+		margin: 0;
+		overflow: hidden;
+		
+		@media (min-width: 64.0625em) {
+			width: 60em;
+			margin: 0 auto;
+		}
+		
+		@media (min-width: 90.0625em) {
+			width: 75em;
+		}
+		
+		h1 {
+			color: white;
+			display: block;
+			background-color: $tsu-blue;
+			font-weight: 700;
+			font-size: 1.875em;
+			margin: 0;
+			height: 65px;
+			box-sizing: border-box;
+			padding: .375em .5em;
+			max-width: 7.75em;
+			float: left;
+			
+			@media (min-width: 64.0625em) {
+				padding: .5em;
+			}
+			
+			@media (min-width: 90.0625em) {
+				padding: .55em .5em;
+			}
+			
+			span.italicized {
+				font-family: $font-display;
+				font-weight: normal;
+				font-size: .625em;
+			}
+		}
+		
+		div.quick-facts {
+			float: left;
+			margin-top: 15px;
+			height: 50px;
+			box-sizing: border-box;
+			width: 25.5em;
+			font-family: $font-sans;
+			overflow: hidden;
+			position: relative;
+			
+			div.clue2, div.clue3 {
+				display: none;
+			}
+			
+			@media (min-width: 64.0625em) {
+				width: 45em;
+				
+				div.clue2 {
+					display: inherit;
+				}
+			}
+			
+			@media (min-width: 90.0625em) {
+				width: 60em;
+				
+				div.clue3 {
+					display: inherit;
+				}
+			}
+			
+			div.clue1, div.clue2, div.clue3 {
+				float: left;
+				
+				div.number {
+					float: left;
+					height: 50px;
+					background-color: $dark-blue;
+					font-size: 1.25em;
+					box-sizing: border-box;
+					width: 3.75em;
+					position: relative;
+					text-align: center;
+					
+					&::before {
+						content:"";
+						display: inline-block;
+						height: 100%;
+						width: 1%;
+						vertical-align: middle;
+					}
+					
+					h2 {
+						color: white;
+						font-size: .875em;
+						display: inline-block;
+						vertical-align: middle;
+					}
+				}
+				
+				div.fact {
+					float: left;
+					height: 50px;
+					width: auto;
+					font-size: .875em;
+					box-sizing: border-box;
+					padding-left: 1em;
+					padding-right: 1em;
+					line-height: 1.25em;
+					width: 23em;
+					position: relative;
+					
+					&::before {
+						content:"";
+						display: inline-block;
+						height: 100%;
+						width: 1%;
+						vertical-align: middle;
+					}
+					
+					p {
+						margin:0;
+						padding: 0;
+						display: inline-block;
+						vertical-align: middle;
+					}
+					
+					@media(min-width: 64.0625em) {
+						width: 16em;
+					}
+				}
+			}
+		}
+	}
+}
