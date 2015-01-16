@@ -68,7 +68,7 @@
 				url: url,
 				success: function(data) {
 					next_url = data.pagination.next_url;
-					count = 4;
+					count = 5;
 					
 					for (var i=0; i < count; i++) {
 						if (typeof data.data[i] !== 'undefined') {

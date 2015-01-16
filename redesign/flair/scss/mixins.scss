@@ -79,3 +79,11 @@
 	-o-background-size: $size;
 	background-size: $size;
 }
+
+@mixin vertical-align ($percentage) {
+	position: relative;
+	top: $percentage;
+	-webkit-transform: translateY(-$percentage);
+	-ms-transform: translateY(-$percentage);
+	transform: translateY(-$percentage);
+}

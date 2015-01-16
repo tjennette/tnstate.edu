@@ -17,6 +17,10 @@ section.prime-carousel {
 				padding: 3% 9%;
 			}
 			
+			@media (min-width: 64.0625em) {
+				padding: 1% 9%;
+			}
+			
 			h1 {
 				margin: 0;
 				color: white;
@@ -26,6 +30,10 @@ section.prime-carousel {
 				@media (min-width: 40.0625em) {
 					margin-bottom: auto;
 				}
+				
+				@media (min-width: 64.0625em) {
+					font-size: 2.625em;
+				}
 			}
 			
 			p {
@@ -33,6 +41,11 @@ section.prime-carousel {
 				
 				@media (min-width: 40.0625em) {
 					display: inherit;
+				}
+				
+				@media (min-width: 64.0625em) {
+					font-size: 1.125em;
+					line-height: 1.5em;
 				}
 			}
 			

@@ -102,7 +102,7 @@ header {
 			
 			.shift-right {
 				float: right;
-				width: 47em;
+				width: 55em;
 			}
 		}
 		
@@ -679,97 +679,8 @@ section.current-news {
 }
 
 // FEATURED CONTENT
-section.featured-content {
-	padding:1.75em 0;
-	
-	div.wrapper {
-		width: 90%;
-		padding: 1em 0;
-		margin: 0 auto;
-		overflow: hidden;
-		
-		@media (min-width: 64.0625em) {
-			margin: 0 auto;
-			overflow: hidden;
-			width: 60em;
-		}
-		
-		@media (min-width: 90.0625em) {
-			width: 64em;
-			margin: 0 auto;
-		}
-		
-		//STUDENT PROFILES
-		section.student-profiles {
-			text-align: center;
-			margin:0 auto 1em;
-			display: none;
-			
-			@media (min-width: 64.0625em) {
-				display: inherit;
-				width: 25%;
-				float: left;
-			}
-			
-			h1 {
-				margin: 0;
-				font-size: 1.875em;
-				padding: .5em 0;
-			}
-			
-			a {
-				text-decoration: none;
-				
-				img {
-					max-width: 200px;
-				}
-				
-				h2 {
-					font-size: 1.5em;
-					font-weight: bold;
-				}
-				
-				h3 {
-					font-size: .875em;
-				}
-			}
-		}
-		
-		// FEATURED VIDEO
-		section.featured-video {
-			clear: left;
-			
-			@media (min-width: 64.0625em) {
-				clear: none;
-				float: left;
-				width: 72%;
-				margin-right: 3%;
-			}
-			
-			h1 {
-				margin: 0 0 .5em 0;
-				padding: .25em 0;
-				text-transform: capitalize;
-				font-size: 1.875em;
-			}
-			
-			.video-wrapper {
-				position: relative;
-				padding-bottom: 56.25%; /* 16:9 */
-				padding-top: 25px;
-				height: 0;
-			
-				iframe {
-					position: absolute;
-					top: 0;
-					left: 0;
-					width: 100%;
-					height: 100%;
-				}
-			}
-		}
-	}
-}
+
+@import "_featuredcontent.scss";
 
 // TSU BY THE NUMBERS
 @import "_bythenumbers.scss";
@@ -867,7 +778,7 @@ section.photo-feed {
 			
 			div.item {
 				float: left;
-				width: (96.9/4)*1%;
+				width: (96/5)*1%;
 				
 				a {
 					

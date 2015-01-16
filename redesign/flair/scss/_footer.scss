@@ -40,6 +40,7 @@ footer {
 				float: left;
 				box-sizing: border-box;
 				padding-right: 1.5em;
+				line-height: 1.125em;
 				
 				li {
 					list-style-type: none;
@@ -52,6 +53,10 @@ footer {
 						&:hover {
 							color: $tsu-blue;
 						}
+					}
+					
+					+li {
+						margin-top: .25em;
 					}
 				}
 			}

@@ -1,0 +1,186 @@
+section.featured-content {
+	padding:.5em 0;
+	
+	div.wrapper {
+		width: 90%;
+		padding: 1em 0;
+		margin: 0 auto;
+		overflow: hidden;
+		
+		@media (min-width: 64.0625em) {
+			margin: 0 auto;
+			overflow: hidden;
+			width: 60em;
+		}
+		
+		@media (min-width: 90.0625em) {
+			width: 64em;
+			margin: 0 auto;
+		}
+		
+		//STUDENT PROFILES
+		/* section.student-profiles {
+		*	text-align: center;
+		*	margin:0 auto 1em;
+		*	display: none;
+			
+		*	@media (min-width: 64.0625em) {
+		*		display: inherit;
+		*		width: 25%;
+		*		float: left;
+		*	}
+			
+		*	h1 {
+		*		margin: 0;
+		*		font-size: 1.875em;
+		*		padding: .5em 0;
+		*	}
+			
+		*	a {
+		*		text-decoration: none;
+				
+		*		img {
+		*			max-width: 200px;
+		*		}
+				
+		*		h2 {
+		*			font-size: 1.5em;
+		*			font-weight: bold;
+		*		}
+				
+		*		h3 {
+		*			font-size: .875em;
+		*		}
+		*	}
+		*} */
+		
+		// UPCOMING EVENTS
+		section.upcoming-events {
+			clear: left;
+			
+			@media (min-width: 64.0625em) {
+				clear: none;
+				float: right;
+				width: 31.78%;
+			} 
+			
+			h1 {
+				margin:0 0 .5em 0;
+				padding: .25em 0;
+				text-transform: capitalize;
+				font-size: 1.875em;
+			}
+			
+			ul {
+				margin: 0;
+				padding: 0;
+				
+				li {
+					list-style-type: none;
+					width: 100%;
+					background-color: $twoforty-grey;
+					overflow: hidden;
+					height: auto;
+					max-height: 4.375em;
+					
+					+li {
+						margin-top: .625em;
+					}
+					
+					div.date {
+						float: left;
+						background-color: $dark-blue;
+						color: white;
+						box-sizing: border-box;
+						padding: .325em;
+						width: 21.74%;
+						max-width: 5em;
+						text-align: center;
+						font-family: $font-sans;
+						font-size: 1.625em;
+						font-weight: bold;
+						line-height: 1em;
+						
+						span.month {
+							font-size: .875em;
+							font-weight: normal;
+							text-transform: uppercase;
+						}
+						
+						&:hover {
+							background-color: $middle-blue;
+						}
+					}
+					
+					div.event {
+						float: left;
+						width: 78.26%;
+						height: 2.875em;
+						
+						p {
+							margin-left: 1em;
+							position: relative;
+							top: 50%;
+							-webkit-transform: translateY(-50%);
+							-ms-transform: translateY(-50%);
+							transform: translateY(-50%);
+						}
+					}
+					
+					&:last-child {
+						padding: .125em;
+						box-sizing: border-box;
+						text-align: right;
+						
+						a {
+							margin-right: 1em;
+							font-family: $font-sans;
+							font-size: .875em;
+							font-style: italic;
+							color: $middle-blue;
+							@include transition (color, 0.2s, ease);
+							
+							&:hover {
+								color: $tsu-blue;
+							}
+						}
+					}
+				}
+			}
+		}
+		
+		// FEATURED VIDEO
+		section.featured-video {
+			clear: left;
+			
+			@media (min-width: 64.0625em) {
+				clear: none;
+				float: left;
+				width: 65.868%;
+				margin-right: 2.352%;
+			}
+			
+			h1 {
+				margin: 0 0 .5em 0;
+				padding: .25em 0;
+				text-transform: capitalize;
+				font-size: 1.875em;
+			}
+			
+			.video-wrapper {
+				position: relative;
+				padding-bottom: 56.25%; /* 16:9 */
+				padding-top: 25px;
+				height: 0;
+			
+				iframe {
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+				}
+			}
+		}
+	}
+}

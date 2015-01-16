@@ -269,7 +269,7 @@ header {
         margin: 0 auto; }
         header .utility-nav .shift-right {
           float: right;
-          width: 47em; } }
+          width: 55em; } }
     header .utility-nav ul li {
       float: left;
       position: relative; }
@@ -711,6 +711,9 @@ section.prime-carousel {
     @media (min-width: 40.0625em) {
       section.prime-carousel div.prime-slide div.slide-content {
         padding: 3% 9%; } }
+    @media (min-width: 64.0625em) {
+      section.prime-carousel div.prime-slide div.slide-content {
+        padding: 1% 9%; } }
     section.prime-carousel div.prime-slide div.slide-content h1 {
       margin: 0;
       color: white;
@@ -719,11 +722,18 @@ section.prime-carousel {
       @media (min-width: 40.0625em) {
         section.prime-carousel div.prime-slide div.slide-content h1 {
           margin-bottom: auto; } }
+      @media (min-width: 64.0625em) {
+        section.prime-carousel div.prime-slide div.slide-content h1 {
+          font-size: 2.625em; } }
     section.prime-carousel div.prime-slide div.slide-content p {
       display: none; }
       @media (min-width: 40.0625em) {
         section.prime-carousel div.prime-slide div.slide-content p {
           display: inherit; } }
+      @media (min-width: 64.0625em) {
+        section.prime-carousel div.prime-slide div.slide-content p {
+          font-size: 1.125em;
+          line-height: 1.5em; } }
     section.prime-carousel div.prime-slide div.slide-content button {
       /* fallback */
       background-color: #2c73b6;
@@ -817,12 +827,46 @@ section.current-news {
         color: #0053a0; }
 
 section.featured-content {
-  padding: 1.75em 0; }
+  padding: .5em 0; }
   section.featured-content div.wrapper {
     width: 90%;
     padding: 1em 0;
     margin: 0 auto;
-    overflow: hidden; }
+    overflow: hidden;
+    /* section.student-profiles {
+    *	text-align: center;
+    *	margin:0 auto 1em;
+    *	display: none;
+    	
+    *	@media (min-width: 64.0625em) {
+    *		display: inherit;
+    *		width: 25%;
+    *		float: left;
+    *	}
+    	
+    *	h1 {
+    *		margin: 0;
+    *		font-size: 1.875em;
+    *		padding: .5em 0;
+    *	}
+    	
+    *	a {
+    *		text-decoration: none;
+    		
+    *		img {
+    *			max-width: 200px;
+    *		}
+    		
+    *		h2 {
+    *			font-size: 1.5em;
+    *			font-weight: bold;
+    *		}
+    		
+    *		h3 {
+    *			font-size: .875em;
+    *		}
+    *	}
+    *} */ }
     @media (min-width: 64.0625em) {
       section.featured-content div.wrapper {
         margin: 0 auto;
@@ -832,36 +876,84 @@ section.featured-content {
       section.featured-content div.wrapper {
         width: 64em;
         margin: 0 auto; } }
-    section.featured-content div.wrapper section.student-profiles {
-      text-align: center;
-      margin: 0 auto 1em;
-      display: none; }
+    section.featured-content div.wrapper section.upcoming-events {
+      clear: left; }
       @media (min-width: 64.0625em) {
-        section.featured-content div.wrapper section.student-profiles {
-          display: inherit;
-          width: 25%;
-          float: left; } }
-      section.featured-content div.wrapper section.student-profiles h1 {
+        section.featured-content div.wrapper section.upcoming-events {
+          clear: none;
+          float: right;
+          width: 31.78%; } }
+      section.featured-content div.wrapper section.upcoming-events h1 {
+        margin: 0 0 .5em 0;
+        padding: .25em 0;
+        text-transform: capitalize;
+        font-size: 1.875em; }
+      section.featured-content div.wrapper section.upcoming-events ul {
         margin: 0;
-        font-size: 1.875em;
-        padding: .5em 0; }
-      section.featured-content div.wrapper section.student-profiles a {
-        text-decoration: none; }
-        section.featured-content div.wrapper section.student-profiles a img {
-          max-width: 200px; }
-        section.featured-content div.wrapper section.student-profiles a h2 {
-          font-size: 1.5em;
-          font-weight: bold; }
-        section.featured-content div.wrapper section.student-profiles a h3 {
-          font-size: .875em; }
+        padding: 0; }
+        section.featured-content div.wrapper section.upcoming-events ul li {
+          list-style-type: none;
+          width: 100%;
+          background-color: #f0f0f0;
+          overflow: hidden;
+          height: auto;
+          max-height: 4.375em; }
+          section.featured-content div.wrapper section.upcoming-events ul li + li {
+            margin-top: .625em; }
+          section.featured-content div.wrapper section.upcoming-events ul li div.date {
+            float: left;
+            background-color: #002447;
+            color: white;
+            box-sizing: border-box;
+            padding: .325em;
+            width: 21.74%;
+            max-width: 5em;
+            text-align: center;
+            font-family: "Lato", Arial, san-serif;
+            font-size: 1.625em;
+            font-weight: bold;
+            line-height: 1em; }
+            section.featured-content div.wrapper section.upcoming-events ul li div.date span.month {
+              font-size: .875em;
+              font-weight: normal;
+              text-transform: uppercase; }
+            section.featured-content div.wrapper section.upcoming-events ul li div.date:hover {
+              background-color: #003366; }
+          section.featured-content div.wrapper section.upcoming-events ul li div.event {
+            float: left;
+            width: 78.26%;
+            height: 2.875em; }
+            section.featured-content div.wrapper section.upcoming-events ul li div.event p {
+              margin-left: 1em;
+              position: relative;
+              top: 50%;
+              -webkit-transform: translateY(-50%);
+              -ms-transform: translateY(-50%);
+              transform: translateY(-50%); }
+          section.featured-content div.wrapper section.upcoming-events ul li:last-child {
+            padding: .125em;
+            box-sizing: border-box;
+            text-align: right; }
+            section.featured-content div.wrapper section.upcoming-events ul li:last-child a {
+              margin-right: 1em;
+              font-family: "Lato", Arial, san-serif;
+              font-size: .875em;
+              font-style: italic;
+              color: #003366;
+              -webkit-transition: color 0.2s ease;
+              -moz-transition: color 0.2s ease;
+              -o-transition: color 0.2s ease;
+              transition: color 0.2s ease; }
+              section.featured-content div.wrapper section.upcoming-events ul li:last-child a:hover {
+                color: #0053a0; }
     section.featured-content div.wrapper section.featured-video {
       clear: left; }
       @media (min-width: 64.0625em) {
         section.featured-content div.wrapper section.featured-video {
           clear: none;
           float: left;
-          width: 72%;
-          margin-right: 3%; } }
+          width: 65.868%;
+          margin-right: 2.352%; } }
       section.featured-content div.wrapper section.featured-video h1 {
         margin: 0 0 .5em 0;
         padding: .25em 0;
@@ -1054,7 +1146,7 @@ section.photo-feed .wrapper {
     font-size: 1.875em; }
   section.photo-feed .wrapper div#instagram div.item {
     float: left;
-    width: 24.225%; }
+    width: 19.2%; }
     section.photo-feed .wrapper div#instagram div.item a img {
       max-width: 640px;
       max-height: 640px;
@@ -1243,7 +1335,8 @@ footer {
         max-width: 50%;
         float: left;
         box-sizing: border-box;
-        padding-right: 1.5em; }
+        padding-right: 1.5em;
+        line-height: 1.125em; }
         footer div.wrapper section.footer-sitemap ul li {
           list-style-type: none; }
           footer div.wrapper section.footer-sitemap ul li a {
@@ -1252,6 +1345,8 @@ footer {
             color: #313131; }
             footer div.wrapper section.footer-sitemap ul li a:hover {
               color: #0053a0; }
+          footer div.wrapper section.footer-sitemap ul li + li {
+            margin-top: .25em; }
     footer div.wrapper section.footer-social {
       display: none;
       width: 33%;
