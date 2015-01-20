@@ -1,0 +1,229 @@
+.primary-nav {
+		float: left;
+		width: 45%;
+		border-right: $eighty-grey solid 1px;
+		padding: 2.5%;
+		text-align: right;
+		text-transform: capitalize;
+		font-size: $mobile-font-size;
+		line-height: $moblie-line-height;
+		
+		@media (min-width: 40.0625em) {
+			float: none;
+			width: 100%;
+			border: none;
+			text-align: left;
+			padding: 0;
+			background-color: white;
+		}
+		
+		.wrapper {
+			
+			@media (min-width: 64.0625em) {
+				margin: 0 auto;
+				overflow: hidden;
+				width: 71em;
+			}
+			
+			@media (min-width: 90.0625em) {
+				width: 90em;
+				margin: 0 auto;
+			}
+		
+			.primary-logo {
+				display: none;
+				
+				@media (min-width: 40.0625em) {
+					display: inherit;
+					width: 100%;
+					text-align: center;
+					padding: 3% 0;
+					
+					img {
+						max-width:38%;
+						margin: 0 auto;
+					}
+				}
+				
+				@media (min-width: 64.0625em) {
+					float: left;
+					width: 15.625em;
+					padding: 0.875em 5%;
+					
+					img {
+						max-width: 250px;
+						margin: 0;
+					}
+				}
+			}
+		
+			nav {
+				
+				@media (min-width: 40.0625em) {
+					width: 45em;
+					margin: 0 auto;
+				}
+				
+				@media (min-width: 64.0625em) {
+					width: 48em;
+					float: left;
+				}
+				
+				@media (min-width: 90.0625em) {
+					width: 65.375em;
+					float: left;
+				}
+					
+				ul {
+					list-style: none;
+					
+					li {
+						
+						@media (min-width: 40.0625em) {
+							float: left;
+							display: inline;
+							text-align: center;
+						}
+						
+						div.megamenu {
+							display: none;
+							color: $eighty-grey;
+							font-family: $font-serif;
+							line-height: 1.25em;
+							position: absolute;
+							z-index: 9999;
+							margin: 0 auto;
+							left: 0;
+							width: 100%;
+							
+							div.menu-shift {
+								margin: 0 auto;
+								width: 100%;
+								overflow: hidden;
+								
+								@media (min-width: 64.0625em) {
+									width: 71em;
+									margin: 0 auto;
+								}
+								
+								@media (min-width: 90.0625em ) {
+									width: 90em;
+								}
+							}
+							
+							div.mega-container {
+								overflow: hidden;
+								background: white;
+								border-bottom: solid 4px $tsu-blue;
+								padding: 1em .5em;
+								width: 100%;
+								float: left;
+								
+								@media (min-width: 64.0625em) {
+									width: 48em;
+									float: right;
+								}
+								
+								@media (min-width: 90.0625em) {
+									width:65.375em;
+								}
+								
+								nav {
+									font-family: $font-sans;
+									float: left;
+									width: 33%;
+									border-right: solid 1px $light-grey-gradient;
+									padding: 0 1em 0 0;
+									
+									ul {
+										
+										li {
+											clear: left;
+											width: 100%;
+											text-align: right;
+											
+											a {
+												@include transition (color, 0.2s, ease);
+												border: none;
+												color: $tsu-blue;
+												padding: .5em;
+												
+												&:hover {
+													background: white;
+													color: $eighty-grey;
+												}
+											}
+										}
+									}
+								}
+								
+								div {
+									float: left;
+									max-width: 60%;
+									padding: 0 0 0 1.5em;
+									
+									p {
+										font-size: (16/14)*1em;
+										line-height: 1.5em;
+										max-width: 85%;
+										padding-top: .125em;
+										margin-top: 0;
+										text-transform: none;
+										text-align: left;
+										
+										@media (min-width: 64.0625em) {
+											line-height: 1.375em;
+										}
+									}
+								}
+							}
+						}
+						
+						a {
+							
+							@media (min-width: 40.0625em) {
+								padding: 1em .6em .75em;
+								border-bottom: white solid 4px;
+								display: block;
+							}
+							
+							@media (min-width: 64.0625em) {
+								padding: 2.125em .755em;
+							}
+							
+							@media (min-width: 90.0625em) {
+								padding: 2.125em 1.625em;
+							}
+							
+							&:hover {
+								
+								@media (min-width: 40.0625em) {
+									@include linear-gradient ($gradient-blue, $light-blue);
+									color: white;
+									border-bottom: $tsu-blue solid 4px;
+								}
+							}
+						}
+						
+						&:hover > div.megamenu {
+										
+										@media (min-width:40.0625em) {
+											display: block;
+										}
+									}
+						
+						+li {
+							
+							@media (min-width: 40.0625em) {
+								margin: 0 0 0 1px;
+							}
+							
+							@media (min-width: 64.0625em) {
+								margin: 0 0 0 2px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}

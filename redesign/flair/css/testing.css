@@ -269,10 +269,9 @@ header {
         margin: 0 auto; }
         header .utility-nav .shift-right {
           float: right;
-          width: 55em; } }
+          width: 50em; } }
     header .utility-nav ul li {
-      float: left;
-      position: relative; }
+      float: left; }
       header .utility-nav ul li a {
         display: block;
         padding: 1em 0; }
@@ -291,19 +290,33 @@ header {
         @media (min-width: 40.0625em) {
           header .utility-nav ul li + li {
             margin: inherit; } }
-    header .utility-nav .close-mobile {
-      float: right; }
-      header .utility-nav .close-mobile a.toggle-menu {
-        height: 12px;
-        width: 17px;
-        margin-top: 15px;
-        background-image: url(../../images/svg/hamburger.svg);
-        background-repeat: no-repeat;
-        overflow: hidden;
-        text-indent: -500em; }
+      header .utility-nav ul li ul {
+        display: none;
+        z-index: 9999;
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        width: 7.5em; }
+        header .utility-nav ul li ul li {
+          clear: left;
+          width: 100%;
+          background-color: #929292;
+          -webkit-transition: background-color 0.2s ease;
+          -moz-transition: background-color 0.2s ease;
+          -o-transition: background-color 0.2s ease;
+          transition: background-color 0.2s ease; }
+          header .utility-nav ul li ul li:hover {
+            background-color: #a8aaad; }
+          header .utility-nav ul li ul li a {
+            color: white;
+            text-decoration: none;
+            width: 100%;
+            display: block; }
+            header .utility-nav ul li ul li a:hover {
+              color: white; }
       @media (min-width: 40.0625em) {
-        header .utility-nav .close-mobile {
-          display: none; } }
+        header .utility-nav ul li:hover > ul {
+          display: block; } }
     header .utility-nav .utility-search {
       padding: 1em 2em 0 0;
       clear: both;
@@ -707,7 +720,9 @@ section.prime-carousel {
     background-color: rgba(10, 10, 10, 0.5);
     padding: 3%;
     bottom: 0;
-    box-sizing: border-box; }
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; }
     @media (min-width: 40.0625em) {
       section.prime-carousel div.prime-slide div.slide-content {
         padding: 3% 9%; } }

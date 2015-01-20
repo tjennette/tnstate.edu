@@ -12,6 +12,8 @@ section.prime-carousel {
 			padding:3%;
 			bottom: 0;
 			box-sizing: border-box;
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
 			
 			@media (min-width: 40.0625em) {
 				padding: 3% 9%;

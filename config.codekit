@@ -32,33 +32,6 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/redesign\/flair\/css\/foundation.css": {
-		"fileType": 16,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/redesign\/flair\/css\/foundation.css",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/redesign\/flair\/css\/global.css": {
-		"fileType": 16,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/redesign\/flair\/css\/global.css",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/redesign\/flair\/css\/normalize.css": {
-		"fileType": 16,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/redesign\/flair\/css\/normalize.css",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
 	"\/redesign\/flair\/css\/owl.carousel.css": {
 		"fileType": 16,
 		"ignore": 0,
@@ -134,6 +107,22 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
+	"\/redesign\/flair\/scss\/_header.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/redesign\/flair\/scss\/_header.scss",
+		"outputAbbreviatedPath": "\/redesign\/flair\/css\/_header.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
 	"\/redesign\/flair\/scss\/_normalize.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
@@ -143,6 +132,22 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/redesign\/flair\/scss\/_normalize.scss",
 		"outputAbbreviatedPath": "\/redesign\/flair\/css\/_normalize.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/redesign\/flair\/scss\/_primarynav.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/redesign\/flair\/scss\/_primarynav.scss",
+		"outputAbbreviatedPath": "\/redesign\/flair\/css\/_primarynav.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -166,6 +171,22 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
+	"\/redesign\/flair\/scss\/_secondarynav.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/redesign\/flair\/scss\/_secondarynav.scss",
+		"outputAbbreviatedPath": "\/redesign\/flair\/css\/_secondarynav.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
 	"\/redesign\/flair\/scss\/_typography.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
@@ -182,6 +203,22 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
+	"\/redesign\/flair\/scss\/_utilitynav.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/redesign\/flair\/scss\/_utilitynav.scss",
+		"outputAbbreviatedPath": "\/redesign\/flair\/css\/_utilitynav.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
 	"\/redesign\/flair\/scss\/mixins.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
@@ -191,22 +228,6 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/redesign\/flair\/scss\/mixins.scss",
 		"outputAbbreviatedPath": "\/redesign\/flair\/css\/mixins.css",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
-		"useLibsass": 0
-		},
-	"\/redesign\/flair\/scss\/prime.scss": {
-		"createSourceMap": 0,
-		"debugStyle": 0,
-		"decimalPrecision": 10,
-		"fileType": 4,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/redesign\/flair\/scss\/prime.scss",
-		"outputAbbreviatedPath": "\/redesign\/flair\/css\/prime.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,

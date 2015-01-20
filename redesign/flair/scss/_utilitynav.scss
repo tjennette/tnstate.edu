@@ -1,0 +1,126 @@
+// Utility Navigation
+	.utility-nav {
+		padding: 2% 5% 5% 5%;
+		text-transform: uppercase;
+		overflow: hidden;
+		font-size: 0.6875em;
+		
+		@media (min-width: 40.0625em) {
+			background-color: rgba(256, 256, 256, .95);
+			padding: 0 2.5%;
+			margin: 0 0 0 1em;
+			border-bottom: $ghost-grey solid 1px;
+			max-width: 95%;
+			margin: 0 auto;
+			
+			.shift-right {
+				float: right;
+				width: 50em;
+			}
+		}
+		
+		ul {
+			
+			li {
+				float: left;
+				
+				a {
+					display: block;
+					padding: 1em 0;
+					
+					@media (min-width: 40.0625em) {
+						padding: 1em;
+						margin: 0.25em 1em 0 0;
+						@include transition (color, 0.2s, ease);
+						
+						&:hover {
+							color: $tsu-blue;
+						}
+					}
+				}
+				
+				+li {
+					margin: 0 0 0 1em;
+					
+					@media (min-width: 40.0625em) {
+						margin: inherit;
+					}
+				}
+				
+				ul {
+					display: none;
+					z-index: 9999;
+					position: absolute;
+					margin: 0;
+					padding: 0;
+					width: 7.5em;
+					
+					li {
+						clear: left;
+						width: 100%;
+						background-color: $text-grey;
+						@include transition (background-color, 0.2s, ease);
+						
+						&:hover {
+							background-color: $dark-grey-gradient;
+						}
+						
+						a{
+							color: white;
+							text-decoration: none;
+							width: 100%;
+							display: block;
+							
+							&:hover {
+								color: white;
+							}
+						}
+					}
+				}
+				
+				&:hover > ul {
+					
+					@media (min-width: 40.0625em) {
+						display: block;
+					}
+				}
+			}
+		}
+		
+		.utility-search {
+			padding: 1em 2em 0 0;
+			clear: both;
+			max-width: 70%;
+			min-width: 20em;
+			margin: 0 auto;
+			
+			@media (min-width: 40.0625em) {
+				clear: none;
+				float: right;
+			}
+			
+			form {
+				@include placeholder-size (1.18181818em);
+				@include placeholder-transform (capitalize);
+				
+				@media (min-width: 40.0625em) {
+					@include placeholder-transform (uppercase);
+					@include placeholder-size (1em);
+				}
+				
+				input {
+					width: 100%;
+					padding: 0.4375em 0.875em .75em;
+					@include border-radius (5px, 5px, 5px, 5px);
+					border: none;
+					
+					@media (min-width: 40.0625em) {
+						padding: 0.4375em 0.875em;
+						width: 15em;
+						border: $light-grey-gradient solid 1px;
+						@include border-radius (0,0,0,0);
+					}
+				}
+			}
+		}
+	}

@@ -1,0 +1,165 @@
+.secondary-nav {
+		float: left;
+		padding: 2.5%;
+		text-transform: capitalize;
+		font-size: $mobile-font-size;
+		line-height: $moblie-line-height;
+		width: 44%;
+		border: none;
+		text-align: left;
+		
+		@media (min-width: 40.0625em){
+			clear: left;
+			background: $eighty-grey;
+			color: white;
+			width: 100%;
+			margin: 0;
+			padding: 0;
+		}
+		
+		.wrapper {
+			
+			@media (min-width: 40.0625em){
+				margin: 0 auto;
+				overflow: hidden;
+				width: 44.5em;
+			}
+			
+			@media (min-width: 90.0625em) {
+				width: 48em;
+				margin: 0 auto;
+			}
+			
+			nav {
+				
+				@media (min-width: 40.0625em) {
+					margin: 0;
+					padding: 0;
+				}
+				
+				ul {
+					
+					li {
+						
+						@media (min-width: 40.0625em) {
+							display: inline;
+							float: left;
+						}
+						
+						div.megamenu {
+							display: none;
+							color: $eighty-grey;
+							font-family: $font-serif;
+							line-height: 1.25em;
+							position: absolute;
+							z-index: 9999;
+							margin: 0 auto;
+							left: 0;
+							width: 100%;
+							
+							div.mega-container {
+								width: 100%;
+								background-color: white;
+								border-bottom: solid 4px $tsu-blue;
+								padding:1em .5em;
+								overflow: hidden;
+								
+								@media (min-width:90.0625em) {
+									max-width: 48em;
+									margin: 0 auto;
+								}
+							
+								nav {
+									font-family: $font-sans;
+									float: left;
+									width: 33%;
+									border-right: solid 1px $light-grey-gradient;
+									padding: 0 1em 0 0;
+									
+									ul {
+										
+										li {
+											clear: left;
+											width: 100%;
+											text-align: right;
+											
+											a {
+												@include transition (color, 0.2s, ease);
+												
+												&:hover {
+													background: white;
+													color: $eighty-grey;
+												}
+											}
+										}
+									}
+								}
+								
+								div {
+									float: left;
+									max-width: 60%;
+									padding: 0 0 0 1.5em;
+									
+									p {
+										font-size: (16/14)*1em;
+										line-height: 1.5em;
+										max-width: 85%;
+										padding-top: .125em;
+										margin-top: 0;
+										text-transform: none;
+										
+										@media (min-width: 64.0625em) {
+											line-height: 1.375em;
+										}
+									}
+								}
+							}
+						}
+						
+						+li {
+							
+							@media(min-width:40.0625em) {
+								margin: 0 0 0 2px;
+							}
+						}
+						
+						a {
+							color: white;
+							
+							@media(min-width:40.0625em) {
+								padding: .5em .875em;
+								text-transform: uppercase;
+								font-size: .75em;
+								display: block;
+							}
+							
+							@media (min-width: 90.0625em) {
+								padding: .5em 1.25em;
+							}
+						}
+						
+						&:hover {
+							
+							@media (min-width: 40.0625em) {
+								@include linear-gradient($light-grey-gradient, $dark-grey-gradient);
+							}
+							
+							a {
+								
+								@media (min-width: 40.0625em){
+									color: $tsu-blue;
+								}
+							}
+							
+							> div.megamenu {
+								
+								@media (min-width:40.0625em) {
+									display: block;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
