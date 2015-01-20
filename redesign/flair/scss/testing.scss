@@ -847,6 +847,11 @@ section.photo-feed {
 			width: 60em;
 		}
 		
+		table {
+			border-collapse: inherit;
+			border-spacing: inherit;
+		}
+		
 		.side-nav {
 			font-family: $font-sans;
 			

@@ -1197,6 +1197,9 @@ section.photo-feed .wrapper {
   @media (min-width: 64.0625em) {
     .template-content .wrapper {
       width: 60em; } }
+  .template-content .wrapper table {
+    border-collapse: inherit;
+    border-spacing: inherit; }
   .template-content .wrapper .side-nav {
     font-family: "Lato", Arial, san-serif; }
     .template-content .wrapper .side-nav nav {
