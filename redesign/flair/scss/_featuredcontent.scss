@@ -125,6 +125,17 @@ section.featured-content {
 							-ms-transform: translateY(-50%);
 							transform: translateY(-50%);
 						}
+						
+						a {
+							color: $middle-blue;
+							@include transition (color, 0.2s, ease);
+							text-decoration: none;
+							
+							&:hover {
+								color: $tsu-blue;
+								text-decoration: underline;
+							}
+						}
 					}
 					
 					&:last-child {

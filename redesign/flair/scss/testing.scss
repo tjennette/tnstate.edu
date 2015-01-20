@@ -802,12 +802,12 @@ section.photo-feed {
 .template-content {
 	
 	a {
-		text-decoration: underline;
+		text-decoration: none;
 		color: $tsu-blue;
 		@include transition (color, 0.2s, ease);
 		
 		&:hover {
-			text-decoration: none;
+			text-decoration: underline;
 			color: $charcoal-grey;
 		}
 	}

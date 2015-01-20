@@ -930,6 +930,16 @@ section.featured-content {
               -webkit-transform: translateY(-50%);
               -ms-transform: translateY(-50%);
               transform: translateY(-50%); }
+            section.featured-content div.wrapper section.upcoming-events ul li div.event a {
+              color: #003366;
+              -webkit-transition: color 0.2s ease;
+              -moz-transition: color 0.2s ease;
+              -o-transition: color 0.2s ease;
+              transition: color 0.2s ease;
+              text-decoration: none; }
+              section.featured-content div.wrapper section.upcoming-events ul li div.event a:hover {
+                color: #0053a0;
+                text-decoration: underline; }
           section.featured-content div.wrapper section.upcoming-events ul li:last-child {
             padding: .125em;
             box-sizing: border-box;
@@ -1155,14 +1165,14 @@ section.photo-feed .wrapper {
       margin-left: 1%; }
 
 .template-content a {
-  text-decoration: underline;
+  text-decoration: none;
   color: #0053a0;
   -webkit-transition: color 0.2s ease;
   -moz-transition: color 0.2s ease;
   -o-transition: color 0.2s ease;
   transition: color 0.2s ease; }
   .template-content a:hover {
-    text-decoration: none;
+    text-decoration: underline;
     color: #313131; }
 .template-content .hero-image {
   max-height: 10em;
