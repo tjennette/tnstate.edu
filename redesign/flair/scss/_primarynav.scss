@@ -35,24 +35,37 @@
 				
 				@media (min-width: 40.0625em) {
 					display: inherit;
-					width: 100%;
+					width: 25em;;
 					text-align: center;
-					padding: 3% 0;
+					margin: 0 auto;
+					padding: 2em 0;
 					
-					img {
-						max-width:38%;
-						margin: 0 auto;
+					a {
+						width:100%;
+						display: block;
+						background-image: url('../../images/svg/tsulogo.svg');
+						background-size: cover;
+						padding: 0;
+						padding-bottom: 17%;
+						text-indent: -500em;
 					}
 				}
 				
 				@media (min-width: 64.0625em) {
 					float: left;
-					width: 15.625em;
-					padding: 0.875em 5%;
+					width: 28.45%;
+					box-sizing: border-box;
+					padding: 0.875em 1.875em;
 					
-					img {
-						max-width: 250px;
-						margin: 0;
+					a {
+						padding-bottom: 12%;
+					}
+				}
+				
+				@media (min-width: 90.0625em) {
+					
+					a {
+						padding-bottom: 16%;
 					}
 				}
 			}
@@ -60,17 +73,13 @@
 			nav {
 				
 				@media (min-width: 40.0625em) {
-					width: 45em;
+					width: 39.5em;
 					margin: 0 auto;
 				}
 				
 				@media (min-width: 64.0625em) {
-					width: 48em;
-					float: left;
-				}
-				
-				@media (min-width: 90.0625em) {
-					width: 65.375em;
+					width: 71.55%;
+					box-sizing: border-box;
 					float: left;
 				}
 					
@@ -83,6 +92,11 @@
 							float: left;
 							display: inline;
 							text-align: center;
+							font-size: 1em;
+						}
+						
+						@media (min-width: 64.0625em) {
+							font-size: (18/16)*1em;
 						}
 						
 						div.megamenu {
@@ -102,8 +116,9 @@
 								overflow: hidden;
 								
 								@media (min-width: 64.0625em) {
-									width: 71em;
+									width: 65em;
 									margin: 0 auto;
+									font-size: .875em;
 								}
 								
 								@media (min-width: 90.0625em ) {
@@ -153,6 +168,19 @@
 													color: $eighty-grey;
 												}
 											}
+											
+											h1 {
+												margin: 0;
+												padding: .5em .5em .25em;
+												color: $eighty-grey;
+												font-size: 1em;
+												font-weight: bold;
+												text-transform: uppercase;
+											}
+											
+											+li h1 {
+												padding-top: 1.25em;
+											}
 										}
 									}
 								}
@@ -184,15 +212,16 @@
 							@media (min-width: 40.0625em) {
 								padding: 1em .6em .75em;
 								border-bottom: white solid 4px;
+								color: $tsu-blue;
 								display: block;
 							}
 							
 							@media (min-width: 64.0625em) {
-								padding: 2.125em .755em;
+								padding: 1.875em .755em;
 							}
 							
 							@media (min-width: 90.0625em) {
-								padding: 2.125em 1.625em;
+								padding: 2.5em 1.625em;
 							}
 							
 							&:hover {
@@ -216,10 +245,6 @@
 							
 							@media (min-width: 40.0625em) {
 								margin: 0 0 0 1px;
-							}
-							
-							@media (min-width: 64.0625em) {
-								margin: 0 0 0 2px;
 							}
 						}
 					}

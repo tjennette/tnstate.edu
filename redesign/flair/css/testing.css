@@ -269,7 +269,7 @@ header {
         margin: 0 auto; }
         header .utility-nav .shift-right {
           float: right;
-          width: 50em; } }
+          width: 48em; } }
     header .utility-nav ul li {
       float: left; }
       header .utility-nav ul li a {
@@ -300,6 +300,7 @@ header {
         header .utility-nav ul li ul li {
           clear: left;
           width: 100%;
+          padding: .125em .625em;
           background-color: #929292;
           -webkit-transition: background-color 0.2s ease;
           -moz-transition: background-color 0.2s ease;
@@ -311,7 +312,8 @@ header {
             color: white;
             text-decoration: none;
             width: 100%;
-            display: block; }
+            display: block;
+            padding: .125em; }
             header .utility-nav ul li ul li a:hover {
               color: white; }
       @media (min-width: 40.0625em) {
@@ -424,31 +426,37 @@ header {
       @media (min-width: 40.0625em) {
         header .primary-nav .wrapper .primary-logo {
           display: inherit;
-          width: 100%;
+          width: 25em;
           text-align: center;
-          padding: 3% 0; }
-          header .primary-nav .wrapper .primary-logo img {
-            max-width: 38%;
-            margin: 0 auto; } }
+          margin: 0 auto;
+          padding: 2em 0; }
+          header .primary-nav .wrapper .primary-logo a {
+            width: 100%;
+            display: block;
+            background-image: url("../../images/svg/tsulogo.svg");
+            background-size: cover;
+            padding: 0;
+            padding-bottom: 17%;
+            text-indent: -500em; } }
       @media (min-width: 64.0625em) {
         header .primary-nav .wrapper .primary-logo {
           float: left;
-          width: 15.625em;
-          padding: 0.875em 5%; }
-          header .primary-nav .wrapper .primary-logo img {
-            max-width: 250px;
-            margin: 0; } }
+          width: 28.45%;
+          box-sizing: border-box;
+          padding: 0.875em 1.875em; }
+          header .primary-nav .wrapper .primary-logo a {
+            padding-bottom: 12%; } }
+      @media (min-width: 90.0625em) {
+        header .primary-nav .wrapper .primary-logo a {
+          padding-bottom: 16%; } }
     @media (min-width: 40.0625em) {
       header .primary-nav .wrapper nav {
-        width: 45em;
+        width: 39.5em;
         margin: 0 auto; } }
     @media (min-width: 64.0625em) {
       header .primary-nav .wrapper nav {
-        width: 48em;
-        float: left; } }
-    @media (min-width: 90.0625em) {
-      header .primary-nav .wrapper nav {
-        width: 65.375em;
+        width: 71.55%;
+        box-sizing: border-box;
         float: left; } }
     header .primary-nav .wrapper nav ul {
       list-style: none; }
@@ -456,7 +464,11 @@ header {
         header .primary-nav .wrapper nav ul li {
           float: left;
           display: inline;
-          text-align: center; } }
+          text-align: center;
+          font-size: 1em; } }
+      @media (min-width: 64.0625em) {
+        header .primary-nav .wrapper nav ul li {
+          font-size: 1.125em; } }
       header .primary-nav .wrapper nav ul li div.megamenu {
         display: none;
         color: #505050;
@@ -473,8 +485,9 @@ header {
           overflow: hidden; }
           @media (min-width: 64.0625em) {
             header .primary-nav .wrapper nav ul li div.megamenu div.menu-shift {
-              width: 71em;
-              margin: 0 auto; } }
+              width: 65em;
+              margin: 0 auto;
+              font-size: .875em; } }
           @media (min-width: 90.0625em) {
             header .primary-nav .wrapper nav ul li div.megamenu div.menu-shift {
               width: 90em; } }
@@ -513,6 +526,15 @@ header {
                 header .primary-nav .wrapper nav ul li div.megamenu div.mega-container nav ul li a:hover {
                   background: white;
                   color: #505050; }
+              header .primary-nav .wrapper nav ul li div.megamenu div.mega-container nav ul li h1 {
+                margin: 0;
+                padding: .5em .5em .25em;
+                color: #505050;
+                font-size: 1em;
+                font-weight: bold;
+                text-transform: uppercase; }
+              header .primary-nav .wrapper nav ul li div.megamenu div.mega-container nav ul li + li h1 {
+                padding-top: 1.25em; }
           header .primary-nav .wrapper nav ul li div.megamenu div.mega-container div {
             float: left;
             max-width: 60%;
@@ -532,13 +554,14 @@ header {
         header .primary-nav .wrapper nav ul li a {
           padding: 1em .6em .75em;
           border-bottom: white solid 4px;
+          color: #0053a0;
           display: block; } }
       @media (min-width: 64.0625em) {
         header .primary-nav .wrapper nav ul li a {
-          padding: 2.125em .755em; } }
+          padding: 1.875em .755em; } }
       @media (min-width: 90.0625em) {
         header .primary-nav .wrapper nav ul li a {
-          padding: 2.125em 1.625em; } }
+          padding: 2.5em 1.625em; } }
       @media (min-width: 40.0625em) {
         header .primary-nav .wrapper nav ul li a:hover {
           /* fallback */
@@ -563,9 +586,6 @@ header {
       @media (min-width: 40.0625em) {
         header .primary-nav .wrapper nav ul li + li {
           margin: 0 0 0 1px; } }
-      @media (min-width: 64.0625em) {
-        header .primary-nav .wrapper nav ul li + li {
-          margin: 0 0 0 2px; } }
   header .secondary-nav {
     float: left;
     padding: 2.5%;

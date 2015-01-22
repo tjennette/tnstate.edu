@@ -15,7 +15,7 @@
 			
 			.shift-right {
 				float: right;
-				width: 50em;
+				width: 48em;
 			}
 		}
 		
@@ -58,6 +58,7 @@
 					li {
 						clear: left;
 						width: 100%;
+						padding: .125em .625em;
 						background-color: $text-grey;
 						@include transition (background-color, 0.2s, ease);
 						
@@ -70,6 +71,7 @@
 							text-decoration: none;
 							width: 100%;
 							display: block;
+							padding: .125em;
 							
 							&:hover {
 								color: white;
