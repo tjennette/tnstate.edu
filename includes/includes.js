@@ -3,7 +3,7 @@ $(function(){
 	$("section.primary-nav").load("includes/header/primarynav.html");
 	$("section.secondary-nav").load("includes/header/secondary.html");
 	$("section.footer-sitemap").load("includes/footer/sitemap.html");
-	$("section.footer-sitemap").load("includes/footer/footersocial.html");
-	$("section.footer-sitemap").load("includes/footer/contact.html");
+	$("section.footer-social").load("includes/footer/footersocial.html");
+	$("section.footer-contact").load("includes/footer/contact.html");
 	$("section.footer-heel").load("includes/footer/sole.html");
 });

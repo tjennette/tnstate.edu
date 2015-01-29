@@ -860,6 +860,21 @@ section.current-news {
       transition: color 0.2s ease; }
       section.current-news #news .item a:hover {
         color: #0053a0; }
+  section.current-news div.more-news {
+    width: 100%;
+    text-align: right; }
+    section.current-news div.more-news a {
+      margin-right: 1em;
+      font-family: "Lato", Arial, san-serif;
+      font-size: .875em;
+      font-style: italic;
+      color: #003366;
+      -webkit-transition: color 0.2s ease;
+      -moz-transition: color 0.2s ease;
+      -o-transition: color 0.2s ease;
+      transition: color 0.2s ease; }
+      section.current-news div.more-news a:hover {
+        color: #0053a0; }
 
 section.featured-content {
   padding: .5em 0; }
@@ -1241,15 +1256,10 @@ section.photo-feed .wrapper {
       padding: 5% 2%;
       width: 96%;
       overflow: hidden; }
-      @media (min-width: 40.0625em) {
-        .template-content .wrapper .side-nav nav {
-          padding: 5% 3% 5% 0;
-          float: left;
-          width: 22%; } }
       @media (min-width: 64.0625em) {
         .template-content .wrapper .side-nav nav {
           float: left;
-          padding-right: 4%;
+          padding-right: 5% 4% 5% 0;
           width: 21%; } }
       @media (min-width: 90.0625em) {
         .template-content .wrapper .side-nav nav {
@@ -1260,23 +1270,28 @@ section.photo-feed .wrapper {
         border-top: solid 1px #f0f0f0;
         border-left: solid 1px #f0f0f0;
         border-right: solid 1px #f0f0f0; }
-        @media (min-width: 40.0625em) {
+        @media (min-width: 64.0625em) {
           .template-content .wrapper .side-nav nav ul {
             border: none; } }
         .template-content .wrapper .side-nav nav ul li {
-          padding: .5em;
           list-style-type: none;
           border-bottom: solid 1px #f0f0f0;
-          background-color: #fbfbfb; }
-          @media (min-width: 40.0625em) {
+          background-color: #fbfbfb;
+          -webkit-transition: background-color 0.5s ease;
+          -moz-transition: background-color 0.5s ease;
+          -o-transition: background-color 0.5s ease;
+          transition: background-color 0.5s ease; }
+          .template-content .wrapper .side-nav nav ul li:hover {
+            background-color: white; }
+          @media (min-width: 64.0625em) {
             .template-content .wrapper .side-nav nav ul li {
-              padding: 0;
               margin-bottom: 1em;
               border: none;
               background-color: white; } }
           .template-content .wrapper .side-nav nav ul li a {
+            padding: .5em;
             text-decoration: none;
-            color: #2c73b6;
+            color: #0053a0;
             display: block;
             padding-left: 1em;
             -webkit-transition: color 0.5s ease;
@@ -1284,29 +1299,67 @@ section.photo-feed .wrapper {
             -o-transition: color 0.5s ease;
             transition: color 0.5s ease; }
             .template-content .wrapper .side-nav nav ul li a:hover {
-              color: #313131; }
+              color: #2c73b6; }
+            @media (min-width: 64.0625em) {
+              .template-content .wrapper .side-nav nav ul li a {
+                padding: 0; } }
           .template-content .wrapper .side-nav nav ul li ul {
-            margin-top: .5em;
             border: none;
             background-color: #f0f0f0; }
-            @media (min-width: 40.0625em) {
+            @media (min-width: 64.0625em) {
               .template-content .wrapper .side-nav nav ul li ul {
                 margin-left: 1em;
                 margin-top: 1em;
                 background-color: white; } }
             .template-content .wrapper .side-nav nav ul li ul li {
               border: none;
-              background-color: #f0f0f0; }
-              @media (min-width: 40.0625em) {
+              background-color: #f0f0f0;
+              padding-left: 1em;
+              font-size: .875em; }
+              .template-content .wrapper .side-nav nav ul li ul li:hover {
+                background-color: #e6e7e8; }
+                @media (min-width: 64.0625em) {
+                  .template-content .wrapper .side-nav nav ul li ul li:hover {
+                    background-color: white; } }
+              @media (min-width: 64.0625em) {
                 .template-content .wrapper .side-nav nav ul li ul li {
-                  background-color: white; } }
+                  background-color: white;
+                  padding-left: 0; } }
               .template-content .wrapper .side-nav nav ul li ul li:last-item {
                 margin-bottom: 0; }
+              .template-content .wrapper .side-nav nav ul li ul li a {
+                color: #313131; }
+                @media (min-width: 64.0625em) {
+                  .template-content .wrapper .side-nav nav ul li ul li a {
+                    color: #0053a0; } }
+              .template-content .wrapper .side-nav nav ul li ul li + li {
+                border-top: solid 1px #e6e7e8; }
+                @media (min-width: 64.0625em) {
+                  .template-content .wrapper .side-nav nav ul li ul li + li {
+                    border: none; } }
+          .template-content .wrapper .side-nav nav ul li .mainitem {
+            background-color: #e6e7e8;
+            -webkit-transition: background-color 0.5s ease;
+            -moz-transition: background-color 0.5s ease;
+            -o-transition: background-color 0.5s ease;
+            transition: background-color 0.5s ease; }
+            @media (min-width: 64.0625em) {
+              .template-content .wrapper .side-nav nav ul li .mainitem {
+                background-color: white;
+                -webkit-transition: background-color 0.5s ease;
+                -moz-transition: background-color 0.5s ease;
+                -o-transition: background-color 0.5s ease;
+                transition: background-color 0.5s ease; } }
+            .template-content .wrapper .side-nav nav ul li .mainitem:hover {
+              background-color: #fbfbfb; }
+              @media (min-width: 64.0625em) {
+                .template-content .wrapper .side-nav nav ul li .mainitem:hover {
+                  background-color: white; } }
   .template-content .wrapper .main-content {
     padding: 5% 0;
     float: left;
     width: 100%; }
-    @media (min-width: 40.0625em) {
+    @media (min-width: 64.0625em) {
       .template-content .wrapper .main-content {
         width: 75%; } }
     @media (min-width: 90.0625em) {

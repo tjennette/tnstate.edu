@@ -87,6 +87,24 @@ section.current-news {
 			}
 		}
 	}
+	
+	div.more-news {
+		width: 100%;
+		text-align: right;
+		
+		a {
+			margin-right: 1em;
+			font-family: $font-sans;
+			font-size: .875em;
+			font-style: italic;
+			color: $middle-blue;
+			@include transition (color, 0.2s, ease);
+			
+			&:hover {
+				color: $tsu-blue;
+			}
+		}
+	}
 }
 
 // FEATURED CONTENT
@@ -271,15 +289,15 @@ section.photo-feed {
 				width: 96%;
 				overflow: hidden;
 				
-				@media (min-width: 40.0625em) {
-					padding: 5% 3% 5% 0;
-					float: left;
-					width: 22%;
-				}
+				//@media (min-width: 40.0625em) {
+				//	padding: 5% 3% 5% 0;
+				//	float: left;
+				//	width: 22%;
+				//}
 				
 				@media (min-width: 64.0625em){
 					float: left;
-					padding-right: 4%;
+					padding-right: 5% 4% 5% 0;
 					width: 21%;
 				}
 				
@@ -294,41 +312,48 @@ section.photo-feed {
 					border-left: solid 1px $twoforty-grey;
 					border-right: solid 1px $twoforty-grey;
 					
-					@media (min-width: 40.0625em) {
+					@media (min-width: 64.0625em) {
 						border: none;
 					}
 					
 					li {
-						padding: .5em;
 						list-style-type: none;
 						border-bottom: solid 1px $twoforty-grey;
 						background-color: $ghost-grey;
+						@include transition (background-color, 0.5s, ease);
+								
+							&:hover {
+								background-color: white;
+							}
 						
-						@media (min-width: 40.0625em) {
-							padding: 0;
+						@media (min-width: 64.0625em) {
 							margin-bottom: 1em;
 							border: none;
 							background-color: white;
 						}
 						
 						a {
+							padding: .5em;
 							text-decoration: none;
-							color: $light-blue;
+							color: $tsu-blue;
 							display: block;
 							padding-left: 1em;
 							@include transition (color, 0.5s, ease);
 							
 							&:hover {
-								color: $charcoal-grey;
+								color: $light-blue;
+							}
+							
+							@media (min-width: 64.0625em) {
+								padding: 0;
 							}
 						}
 						
 						ul {
-							margin-top: .5em;
 							border: none;
 							background-color: $twoforty-grey;
 							
-							@media (min-width: 40.0625em) {
+							@media (min-width: 64.0625em) {
 								margin-left: 1em;
 								margin-top: 1em;
 								background-color: white;
@@ -337,13 +362,58 @@ section.photo-feed {
 							li {
 								border: none;
 								background-color: $twoforty-grey;
+								padding-left: 1em;
+								font-size: .875em;
 								
-								@media (min-width: 40.0625em) {
+								&:hover {
+									background-color: $light-grey-gradient;
+									
+									@media (min-width: 64.0625em) {
+										background-color: white;
+									}
+								}
+								
+								@media (min-width: 64.0625em) {
 									background-color: white;
+									padding-left: 0;
 								}
 								
 								&:last-item {
 									margin-bottom: 0;
+								}
+								
+								a {
+									color: $charcoal-grey;
+									
+									@media (min-width: 64.0625em) {
+										color: $tsu-blue;
+									}
+								}
+								
+								+ li {
+									border-top: solid 1px $light-grey-gradient;
+									
+									@media (min-width: 64.0625em) {
+										border: none;
+									}
+								}
+							}
+						}
+						
+						.mainitem {
+							background-color: $light-grey-gradient;
+							@include transition (background-color, 0.5s, ease);
+							
+							@media (min-width: 64.0625em) {
+								background-color: white;
+								@include transition (background-color, 0.5s, ease);
+							} 
+							
+							&:hover {
+								background-color: $ghost-grey;
+								
+								@media (min-width: 64.0625em) {
+									background-color: white;
 								}
 							}
 						}
@@ -357,7 +427,7 @@ section.photo-feed {
 			float: left;
 			width: 100%;
 			
-			@media (min-width: 40.0625em) {
+			@media (min-width: 64.0625em) {
 				width: 75%;
 			}
 			
