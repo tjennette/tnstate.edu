@@ -1,0 +1,61 @@
+section.call-to-action {
+	background: url(../../images/jpg/calltoactionbg.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	color: white;
+	padding: 3.125em 0;
+	width: 100%;
+	box-sizing: border-box;
+	
+	.wrapper {
+		width: 90%;
+		padding: 1em 0;
+		margin: 0 auto;
+		overflow: hidden;
+		
+		@media (min-width 40.0625em) {
+			width: 38em;
+		}
+		
+		@media (min-width: 64.0625em) {
+			width: 62em;
+		}
+		
+		@media (min-width: 90.0625em) {
+			width: 88em;
+		}
+		
+		ul.badges {
+			padding: 0;
+			margin: 0;
+			text-align: center;
+			
+			li.clicky {
+				list-style-type: none;
+				max-width: 269px;
+				display: inline-block;
+				margin: 1% 1% 0 0;
+				
+				&:last-child {
+					
+					@media (min-width: 58.375em) and (max-width: 90em) {
+						display: none;
+					}
+					
+					@media (max-width: 40em) {
+						display: none;
+					}
+				}
+				
+				&:first-child {
+					
+					@media (max-width: 40em) {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+}

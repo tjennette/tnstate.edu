@@ -1,0 +1,48 @@
+section.photo-feed {
+	
+	.wrapper {
+		width: 90%;
+		padding: 1em 0;
+		margin: 0 auto;
+		
+		@media (min-width: 64.0625em) {
+			margin: 0 auto;
+			overflow: hidden;
+			width: 60em;
+		}
+		
+		@media (min-width: 90.0625em) {
+			width: 64em;
+			margin: 0 auto;
+		}
+		
+		h1{
+			margin: 0;
+			padding-bottom: .375em;
+			text-transform: capitalize;
+			font-size: 1.875em;
+		}
+		
+		div#instagram {
+			
+			div.item {
+				float: left;
+				width: (96/5)*1%;
+				
+				a {
+					
+					img{
+						max-width: 640px;
+						max-height: 640px;
+						width: 100%;
+						
+					}
+				}
+				
+				+ div.item {
+					margin-left: 1%;
+				}
+			}
+		}
+	}
+}
