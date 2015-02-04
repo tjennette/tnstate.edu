@@ -227,6 +227,10 @@ blockquote {
     .hidesmall {
       display: inline; } }
 
+@media (min-width: 90.0625em) {
+  .hidebig {
+    display: none; } }
+
 .emphasis {
   font-weight: 700; }
 
