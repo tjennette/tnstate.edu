@@ -1246,24 +1246,61 @@ section.photo-feed .wrapper {
   overflow: hidden; }
   @media (min-width: 40.0625em) {
     .template-content .wrapper {
-      width: 38em;
+      width: 80%;
       padding: 0 1em; } }
   @media (min-width: 64.0625em) {
     .template-content .wrapper {
       width: 60em; } }
-  .template-content .wrapper table {
-    border-collapse: inherit;
-    border-spacing: inherit; }
+  .template-content .wrapper #crumbTrail {
+    font-family: "Lato", Arial, san-serif;
+    margin: 0;
+    padding: 1em;
+    list-style: none;
+    color: #0053a0; }
+    .template-content .wrapper #crumbTrail li {
+      display: inline; }
+      .template-content .wrapper #crumbTrail li a {
+        color: #0053a0;
+        text-decoration: none;
+        border-bottom: dotted #0053a0 1px;
+        -webkit-transition: color 0.5s ease;
+        -moz-transition: color 0.5s ease;
+        -o-transition: color 0.5s ease;
+        transition: color 0.5s ease; }
+        .template-content .wrapper #crumbTrail li a:hover {
+          color: #313131;
+          border-bottom: none; }
+  .template-content .wrapper .left-toggle {
+    width: 96%;
+    margin: 0 auto;
+    padding: .125em;
+    box-sizing: border-box;
+    background-color: #f0f0f0;
+    overflow: hidden; }
+    @media (min-width: 64.0625em) {
+      .template-content .wrapper .left-toggle {
+        display: none; } }
+    .template-content .wrapper .left-toggle .toggle-title {
+      color: #0053a0;
+      font-family: "Lato", Arial, san-serif;
+      display: block;
+      float: left;
+      padding: .5em .875em;
+      font-size: 1.125em; }
+    .template-content .wrapper .left-toggle img {
+      width: 2em;
+      float: right;
+      padding: .5em 1em; }
   .template-content .wrapper .side-nav {
     font-family: "Lato", Arial, san-serif; }
     .template-content .wrapper .side-nav nav {
-      padding: 5% 2%;
+      padding: 0 2% 5% 2%;
       width: 96%;
       overflow: hidden; }
       @media (min-width: 64.0625em) {
         .template-content .wrapper .side-nav nav {
           float: left;
-          padding-right: 5% 4% 5% 0;
+          padding: 1em 4% 5% 0;
           width: 21%; } }
       @media (min-width: 90.0625em) {
         .template-content .wrapper .side-nav nav {
@@ -1360,37 +1397,31 @@ section.photo-feed .wrapper {
                 .template-content .wrapper .side-nav nav ul li .mainitem:hover {
                   background-color: white; } }
   .template-content .wrapper .main-content {
-    padding: 5% 0;
+    padding: 1em 0;
     float: left;
     width: 100%; }
     @media (min-width: 64.0625em) {
       .template-content .wrapper .main-content {
-        width: 75%; } }
+        width: 75%;
+        padding: 0; } }
     @media (min-width: 90.0625em) {
       .template-content .wrapper .main-content {
         width: 79%; } }
     @media (min-width: 90.0625em) {
       .template-content .wrapper .main-content {
         width: 76%; } }
-    .template-content .wrapper .main-content #crumbTrail {
-      font-family: "Lato", Arial, san-serif;
-      margin: 0;
-      padding: 0 0 1em 0;
-      list-style: none;
-      color: #0053a0; }
-      .template-content .wrapper .main-content #crumbTrail li {
-        display: inline; }
-        .template-content .wrapper .main-content #crumbTrail li a {
-          color: #0053a0;
-          text-decoration: none;
-          border-bottom: dotted #0053a0 1px;
-          -webkit-transition: color 0.5s ease;
-          -moz-transition: color 0.5s ease;
-          -o-transition: color 0.5s ease;
-          transition: color 0.5s ease; }
-          .template-content .wrapper .main-content #crumbTrail li a:hover {
-            color: #313131;
-            border-bottom: none; }
+    .template-content .wrapper .main-content table {
+      width: 100%;
+      border-collapse: collapse; }
+      .template-content .wrapper .main-content table td, .template-content .wrapper .main-content table th {
+        padding: .375em;
+        border: 1px solid #f0f0f0;
+        text-align: left; }
+      .template-content .wrapper .main-content table tr:nth-of-type(odd) {
+        background: #fbfbfb; }
+      .template-content .wrapper .main-content table th {
+        background: #f0f0f0;
+        font-weight: bold; }
     .template-content .wrapper .main-content h1, .template-content .wrapper .main-content h2, .template-content .wrapper .main-content h3, .template-content .wrapper .main-content h4, .template-content .wrapper .main-content h5, .template-content .wrapper .main-content h6 {
       padding: 1% 0;
       margin: 0; }

@@ -1,0 +1,140 @@
+.side-nav {
+	font-family: $font-sans;
+	
+	nav {
+		padding: 0 2% 5% 2%;
+		width: 96%;
+		overflow: hidden;
+		
+		//@media (min-width: 40.0625em) {
+		//	padding: 5% 3% 5% 0;
+		//	float: left;
+		//	width: 22%;
+		//}
+		
+		@media (min-width: 64.0625em){
+			float: left;
+			padding: 1em 4% 5% 0;
+			width: 21%;
+		}
+		
+		@media (min-width: 90.0625em) {
+			width: 18%;
+		}
+		
+		ul {
+			margin: 0;
+			padding: 0;
+			border-top: solid 1px $twoforty-grey;
+			border-left: solid 1px $twoforty-grey;
+			border-right: solid 1px $twoforty-grey;
+			
+			@media (min-width: 64.0625em) {
+				border: none;
+			}
+			
+			li {
+				list-style-type: none;
+				border-bottom: solid 1px $twoforty-grey;
+				background-color: $ghost-grey;
+				@include transition (background-color, 0.5s, ease);
+						
+					&:hover {
+						background-color: white;
+					}
+				
+				@media (min-width: 64.0625em) {
+					margin-bottom: 1em;
+					border: none;
+					background-color: white;
+				}
+				
+				a {
+					padding: .5em;
+					text-decoration: none;
+					color: $tsu-blue;
+					display: block;
+					padding-left: 1em;
+					@include transition (color, 0.5s, ease);
+					
+					&:hover {
+						color: $light-blue;
+					}
+					
+					@media (min-width: 64.0625em) {
+						padding: 0;
+					}
+				}
+				
+				ul {
+					border: none;
+					background-color: $twoforty-grey;
+					
+					@media (min-width: 64.0625em) {
+						margin-left: 1em;
+						margin-top: 1em;
+						background-color: white;
+					}
+					
+					li {
+						border: none;
+						background-color: $twoforty-grey;
+						padding-left: 1em;
+						font-size: .875em;
+						
+						&:hover {
+							background-color: $light-grey-gradient;
+							
+							@media (min-width: 64.0625em) {
+								background-color: white;
+							}
+						}
+						
+						@media (min-width: 64.0625em) {
+							background-color: white;
+							padding-left: 0;
+						}
+						
+						&:last-item {
+							margin-bottom: 0;
+						}
+						
+						a {
+							color: $charcoal-grey;
+							
+							@media (min-width: 64.0625em) {
+								color: $tsu-blue;
+							}
+						}
+						
+						+ li {
+							border-top: solid 1px $light-grey-gradient;
+							
+							@media (min-width: 64.0625em) {
+								border: none;
+							}
+						}
+					}
+				}
+				
+				.mainitem {
+					background-color: $light-grey-gradient;
+					@include transition (background-color, 0.5s, ease);
+					
+					@media (min-width: 64.0625em) {
+						background-color: white;
+						@include transition (background-color, 0.5s, ease);
+					} 
+					
+					&:hover {
+						background-color: $ghost-grey;
+						
+						@media (min-width: 64.0625em) {
+							background-color: white;
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -16,7 +16,37 @@
 		<!-- START STYLESHEETS -->
 		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic|Merriweather:300,300italic|Lora:400,400italic" /> <!-- Lato, Merriweather, & Lora fonts Google Web Fonts -->
 		<link rel="stylesheet" href="redesign/flair/css/testing.css" />
-
+		<!-- [if !IE]><!-->
+		<style>
+		@media
+		only screen and (max-width: 64em) {
+			table, thead, tbody, th, td, tr { 
+				display: block; 
+			}
+			thead tr {
+				position: absolute;
+				top: -9999em;
+				left: -9999em;
+			}
+			tr { border: 1px solid #ccc; }
+			tr + tr { border-top: none; }
+			td {
+				border: none;
+				border-bottom: 1px solid #eee;
+				position: relative;
+			}
+			td:before {
+				position: absolute;
+				float: left;
+				top: .375em;
+				left: .375em;
+				width: 45%;
+				padding-right: 0.625em;
+				white-space: nowrap;
+			}
+		}
+		</style>
+		<!-- <! [endif]-->
 				
 		<!-- START SCRIPTS -->
 		<!-- REPLACE WITH CUSTOM MODERNIZR FILE BEFORE GOING LIVE, CURRENT FILE IS FOR DEVELOPMENT ONLY -->
@@ -81,8 +111,22 @@
 			</div>
 			
 			<div class="wrapper">
-			
+				
+				<!-- START BREADCRUMB-->
+				<ul id="crumbTrail">
+					<li>
+						<a href="#">Home</a>
+					</li>
+					<li>
+						<a href="#">About TSU</a>
+					</li>
+					<li class="lastitem">
+						<a href="#">Visit Us</a>
+					</li>
+				</ul>
+				
 				<!-- PAGE NAVIGATION -->
+				<div class="left-toggle"><span class="toggle-title">Sample Text</span><img src="redesign/images/svg/hamburger.svg" /></div>
 				<section class="side-nav">
 					<nav>
 						<ul>
@@ -107,47 +151,154 @@
 				<!-- PAGE CONTENT -->
 				<section class="main-content">
 					
-					<!-- START BREADCRUMB-->
-					<ul id="crumbTrail">
-						<li>
-							<a href="#">Home</a>
-						</li>
-						<li>
-							<a href="#">About TSU</a>
-						</li>
-						<li class="lastitem">
-							<a href="#">Visit Us</a>
-						</li>
-					</ul>
-					<!-- END BREADCRUMB-->
-					
 					<h1>Page Title</h1>
-					
 					<h2>Paragraph Title</h2>
-					
 					<p>Lorem ipsum dolor sit amet, cu ignota commune aliquando pri, eum illum euripidis adolescens te. Duo ad equidem sanctus nominati, forensibus comprehensam ad vim. Nostro inimicus cu qui, ea gloriatur sententiae reprehendunt mel, nam mucius accusamus sententiae et. Ius atomorum inimicus ne.</p>
-					
 					<h2>Paragraph Title</h2>
-					
 					<figure>
 						<img src="redesign/images/jpg/students2_278w.jpg" alt="students pose for the camera" width="100px">
 						<figcaption>TSU students pose for the camera.</figcaption>
 					</figure>
-					
 					<p>Pri augue facilisis ut, ei eos errem commodo quaeque, hinc nullam utroque est eu. Eu mutat mucius quaerendum pro. Pericula dignissim rationibus ut pro, dicat diceret abhorreant ne sea. Deseruisse philosophia contentiones at qui, his dicam latine consequat eu, vel quot voluptua id. Id vide vidit conclusionemque sed, melius omittam vim ad.</p>
-					
 					<h2>Paragraph Title</h2>
-					
 					<p>Vix ut sonet vivendum. Has ignota volutpat at, utinam iriure tacimates usu eu. An sint scribentur has. Ut noster debitis denique duo.</p>
-					
 					<h2>Paragraph Title</h2>
-					
+					<p>Pri augue facilisis ut, ei eos errem commodo quaeque, hinc nullam utroque est eu. Eu mutat mucius quaerendum pro. Pericula dignissim rationibus ut pro, dicat diceret abhorreant ne sea. Deseruisse philosophia contentiones at qui, his dicam latine consequat eu, vel quot voluptua id. Id vide vidit conclusionemque sed, melius omittam vim ad.</p>
+					<table>
+						<thead>
+							<tr>
+								<th>First Name</th>
+								<th>Last Name</th>
+								<th>Job Title</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Richard</td>
+								<td>Delahaya</td>
+								<td>Director of Media Relations</td>
+							</tr>
+							<tr>
+								<td>Dawn</td>
+								<td>Rutledge</td>
+								<td>Director of Publications</td>
+							</tr>
+							<tr>
+								<td>John</td>
+								<td>Cross</td>
+								<td>Director of Creative Services</td>
+							</tr>
+						</tbody>
+					</table>
 					<p>Ei essent impetus vix, ut cum qualisque definiebas. Vix no sumo justo, stet bonorum sententiae nam eu, at brute vivendo quaerendum sit. Ne inani feugait per. Atqui choro invidunt ex eos. Usu nisl docendi torquatos an, id velit sententiae nec. Ea nibh alterum vivendo mea.</p>
-					
+					<table>
+                        <tbody>
+                           <tr align="left">
+                              <td valign="top">
+                                 <p>
+                                    <strong>What is the ACT?</strong>
+                                    <br>
+                                    <br> The ACT is a national college admissions examination that consists of subject area tests in:</p>
+                                 <p>
+                                    <strong>English&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Mathematics&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Reading&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Science</strong>
+                                 </p>
+                                 <p>The ACT Plus Writing includes the four subject area tests plus a 30-minute writing test.&nbsp; ACT results are accepted by all four-year colleges and universities in the US. The ACT includes 215 multiple-choice questions and takes approximately 3&nbsp;hours and 30&nbsp;minutes to complete, including a short break (or just over four hours if you are taking the ACT Plus Writing). Actual testing time is 2&nbsp;hours and 55&nbsp;minutes (plus 30 minutes if you are taking the ACT Plus Writing).<br>
+                                    <br> The ACT is administered on several test dates within the US, US territories, Puerto Rico, and Canada.&nbsp; The basic registration fee includes score reports for up to four college choices, if you list valid codes when you register.&nbsp; The ACT tests are prepared according to the:</p>
+                                 <ul>
+                                    <li>
+                                       <em>Standards for Educational and Psychological Testing</em>, American Educational Research Association, American Psychological Association, and National Council on Measurement in Education (1999).</li>
+                                    <li>
+                                       <em>Code of Professional Responsibilities in Educational Measurement</em>, National Council on Measurement in Education (1995).</li>
+                                 </ul>
+                                 <p>
+                                    <em>Code of Fair Testing Practices in Education</em>, Joint Committee on Testing Practices (2004).</p>
+                                 <p>You can find out more information on the ACT and register to take the exam at the following link.&nbsp; <br>
+                                    <br>
+                                    <a title="ACT Exam" href="http://www.actstudent.org/regist/dates.html" target="_blank">
+                                       <strong>http://www.actstudent.org/regist/dates.html</strong>
+                                    </a>
+                                 </p>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td valign="top">
+                                 <p>
+                                    <strong>What is the SAT?</strong>
+                                 </p>
+                                 <p>The SAT is a globally recognized college admission test that lets you show colleges what you know and how well you can apply that knowledge. It tests your knowledge of reading, writing and math — subjects that are taught every day in high school classrooms. Most students take the SAT during their junior or senior year of high school, and almost all colleges and universities use the SAT to make admission decisions.</p>
+                                 <p>Taking the SAT is the first step in finding the right college for you — the place where you can further develop your skills and pursue your passions. But SAT scores are just one of many factors that colleges consider when making their admission decisions. High school grades are also very important. In fact, the combination of high school grades and SAT scores is the best predictor of your academic success in college.</p>
+                                 <p>The SAT doesn’t test logic or abstract reasoning. It tests the skills you’re learning in school: reading, writing and math. Your knowledge and skills in these subjects are important for success in college and throughout your life.</p>
+                                 <ul>
+                                    <li>The <strong>critical</strong> 
+                                       <strong>reading </strong>section includes reading passages and sentence completions.</li>
+                                    <li>The <strong>writing</strong> section includes a short essay and multiple-choice questions on identifying errors and improving grammar and usage.</li>
+                                 </ul>
+                                 <p>The <strong>mathematics</strong> section includes questions on arithmetic operations, algebra, geometry, statistics and probability.</p>
+                                 <p>You can find out more information on the SAT and register to take the exam at the following link.&nbsp; <br>
+                                    <br>
+                                    <a title="SAT Exam" href="http://sat.collegeboard.org/home" target="_blank">
+                                       <strong>http://sat.collegeboard.org/home</strong>
+                                    </a>
+                                 </p>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td valign="top">
+                                 <p>
+                                    <strong>What is The TOEFL® exam</strong>
+                                    <br>
+                                    <br> Test Of English as Foreign Language. &nbsp;&nbsp;<br> The essential exam for entry to universities in the United States.</p>
+                                 <p>
+                                    <strong>Who is it for?</strong>
+                                 </p>
+                                 <p>The Test of English as a Foreign Language (TOEFL) measures the ability of non-native speakers of English to use and understand North American English as it is spoken, written and heard in college and university settings. Most people who take the TOEFL test are planning to study at colleges and universities where instruction is in English. In addition, many government agencies, scholarship programs, and licensing/certification agencies use TOEFL scores to evaluate English proficiency. This exam is for university classified international students.</p>
+                                 <p>
+                                    <strong>Versions of the TOEFL® test</strong>
+                                 </p>
+                                 <p>You can do the test on <strong>paper</strong> or on a <strong>computer</strong>, depending where you live.&nbsp; The test comes in two formats: <a href="http://www.examenglish.com/TOEFL/TOEFL_PBt.html">paper-based test</a> (PBT) and <a href="http://www.examenglish.com/TOEFL/TOEFL_iBt.html">next generation computer-based test</a> (iBT).</p>
+                                 <p>The iBT is not yet available at every test center. If it is available at your local center then you will have to do it. If not you will do the PBT.&nbsp; There is also an exam for younger students called <a href="http://www.examenglish.com/TOEFL_Junior/index.html">TOEFL Junior.</a>
+                                 </p>
+                                 <p>
+                                    <strong>Where do I take the test?</strong>
+                                 </p>
+                                 <p>At a test center in your country. The test is organized by the Educational Testing Service. You can register for the TOEFL<strong>®</strong> iBT online.<br>
+                                    <br> 
+                                    <strong>How much does the TOEFL test cost to take?</strong>
+                                 </p>
+                                 <p>Prices of the TOEFL iBT vary in each country ranging from $160 to $240.<br>The paper-based TOEFL is $160.</p>
+                                 <p>You can find out more information on the TOEFL and register to take the exam at the following link.&nbsp;</p>
+                                 <p>
+                                    <a title="TOEFL Exam" href="http://www.ets.org/toefl" target="_blank">
+                                       <strong>http://www.ets.org/toefl</strong>
+                                    </a>
+                                 </p>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td  valign="top">
+                                 <p>
+                                    <strong>What is the DHAE? (The DHAE is a modified version of the HESI Exam)<br>
+                                    </strong>
+                                    <br> The Dental Hygiene Assessment Exam (DHAE) is an admission requirement for all applicants to the Dental Hygiene programs. The (DHAE) is published by Evolve/Elsevier and is sometimes referred to as the HESI Entrance Test. All applicants are required to complete the DHAE prior to admission.</p>
+                                 <p>
+                                    <strong>TSU Dental Hygiene Assessment Exam (DHAE)--required subtests: </strong>
+                                 </p>
+                                 <p>Reading Comprehension<br> Vocabulary and General Knowledge<br> Biology 
+<br> Anatomy and Physiology 
+<br> Learning Style<br> Critical Thinking 
+</p>
+                                 <p>Individual parts of the Dental Hygiene Assessment Exam (DHAE) are not timed, however, the total test session is limited to three (3) hours and (45) minutes. Examinees are responsible for taking the correct parts of the DHAE and adhering to the admission requirements established by the programs and/or schools to which they are applying. 
+</p>
+                                 <p>For those students who may not be local, download the <a title="DHAE Distance Learning" href="/dentalhygiene/documents/DHAE%20Distance%20Learning.pdf" target="_blank">DISTANCE LEARNING</a> Information Sheet.</p>
+                                 <p>Download the <a title="DHAE Info Sheet" href="/dentalhygiene/documents/DHAE%20Info%20Sheet.pdf" target="_blank">DHAE / HESI Information sheet HERE</a>
+                                 </p>
+                              </td>
+                           </tr>
+                        </tbody>
+                     </table>
+					 
 					<h2>Paragraph Title</h2>
-					
 					<p>Quando pericula has at, est probatus evertitur ea, nulla nostrud delicata id eum. Ne mel latine recusabo sensibus. Libris saperet vocibus at nec. Dicam molestiae ex sit.</p>
-					
 				</section>
 			</div>
 		</section>

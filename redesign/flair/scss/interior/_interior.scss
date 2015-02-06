@@ -38,7 +38,7 @@
 		overflow: hidden;
 		
 		@media (min-width: 40.0625em){
-			width: 38em;
+			width: 80%;
 			padding:0 1em;
 		}
 		
@@ -46,159 +46,69 @@
 			width: 60em;
 		}
 		
-		table {
-			border-collapse: inherit;
-			border-spacing: inherit;
-		}
-		
-		.side-nav {
+		#crumbTrail {
 			font-family: $font-sans;
+			margin: 0;
+			padding: 1em;
+			list-style: none;
+			color: $tsu-blue;
 			
-			nav {
-				padding: 5% 2%;
-				width: 96%;
-				overflow: hidden;
+			li {
+				display: inline;
 				
-				//@media (min-width: 40.0625em) {
-				//	padding: 5% 3% 5% 0;
-				//	float: left;
-				//	width: 22%;
-				//}
-				
-				@media (min-width: 64.0625em){
-					float: left;
-					padding-right: 5% 4% 5% 0;
-					width: 21%;
-				}
-				
-				@media (min-width: 90.0625em) {
-					width: 18%;
-				}
-				
-				ul {
-					margin: 0;
-					padding: 0;
-					border-top: solid 1px $twoforty-grey;
-					border-left: solid 1px $twoforty-grey;
-					border-right: solid 1px $twoforty-grey;
+				a {
+					color: $tsu-blue;
+					text-decoration: none;
+					border-bottom: dotted $tsu-blue 1px;
+					@include transition (color, 0.5s, ease);
 					
-					@media (min-width: 64.0625em) {
-						border: none;
-					}
-					
-					li {
-						list-style-type: none;
-						border-bottom: solid 1px $twoforty-grey;
-						background-color: $ghost-grey;
-						@include transition (background-color, 0.5s, ease);
-								
-							&:hover {
-								background-color: white;
-							}
-						
-						@media (min-width: 64.0625em) {
-							margin-bottom: 1em;
-							border: none;
-							background-color: white;
-						}
-						
-						a {
-							padding: .5em;
-							text-decoration: none;
-							color: $tsu-blue;
-							display: block;
-							padding-left: 1em;
-							@include transition (color, 0.5s, ease);
-							
-							&:hover {
-								color: $light-blue;
-							}
-							
-							@media (min-width: 64.0625em) {
-								padding: 0;
-							}
-						}
-						
-						ul {
-							border: none;
-							background-color: $twoforty-grey;
-							
-							@media (min-width: 64.0625em) {
-								margin-left: 1em;
-								margin-top: 1em;
-								background-color: white;
-							}
-							
-							li {
-								border: none;
-								background-color: $twoforty-grey;
-								padding-left: 1em;
-								font-size: .875em;
-								
-								&:hover {
-									background-color: $light-grey-gradient;
-									
-									@media (min-width: 64.0625em) {
-										background-color: white;
-									}
-								}
-								
-								@media (min-width: 64.0625em) {
-									background-color: white;
-									padding-left: 0;
-								}
-								
-								&:last-item {
-									margin-bottom: 0;
-								}
-								
-								a {
-									color: $charcoal-grey;
-									
-									@media (min-width: 64.0625em) {
-										color: $tsu-blue;
-									}
-								}
-								
-								+ li {
-									border-top: solid 1px $light-grey-gradient;
-									
-									@media (min-width: 64.0625em) {
-										border: none;
-									}
-								}
-							}
-						}
-						
-						.mainitem {
-							background-color: $light-grey-gradient;
-							@include transition (background-color, 0.5s, ease);
-							
-							@media (min-width: 64.0625em) {
-								background-color: white;
-								@include transition (background-color, 0.5s, ease);
-							} 
-							
-							&:hover {
-								background-color: $ghost-grey;
-								
-								@media (min-width: 64.0625em) {
-									background-color: white;
-								}
-							}
-						}
+					&:hover {
+						color: $charcoal-grey;
+						border-bottom: none;
 					}
 				}
 			}
 		}
 		
+		.left-toggle {
+			width: 96%;
+			margin: 0 auto;
+			padding: .125em;
+			box-sizing: border-box;
+			background-color: $twoforty-grey;
+			overflow: hidden;
+			
+			@media (min-width: 64.0625em) {
+				display: none;
+			}
+			
+			.toggle-title {
+				color: $tsu-blue;
+				font-family: $font-sans;
+				display: block;
+				float: left;
+				padding: .5em .875em;
+				font-size: 1.125em;
+			}
+			
+			img {
+				width: 2em;
+				float: right;
+				padding: .5em 1em;
+			}
+		}
+		
+		// LEFT NAV
+		@import "_leftnav.scss";
+		
 		.main-content {
-			padding: 5% 0;
+			padding: 1em 0;
 			float: left;
 			width: 100%;
 			
 			@media (min-width: 64.0625em) {
 				width: 75%;
+				padding: 0;
 			}
 			
 			@media (min-width: 90.0625em) {
@@ -209,27 +119,23 @@
 				width: 76%;
 			}
 			
-			#crumbTrail {
-				font-family: $font-sans;
-				margin: 0;
-				padding: 0 0 1em 0;
-				list-style: none;
-				color: $tsu-blue;
+			table {
+				width: 100%;
+				border-collapse: collapse;
 				
-				li {
-					display: inline;
-					
-					a {
-						color: $tsu-blue;
-						text-decoration: none;
-						border-bottom: dotted $tsu-blue 1px;
-						@include transition (color, 0.5s, ease);
-						
-						&:hover {
-							color: $charcoal-grey;
-							border-bottom: none;
-						}
-					}
+				td, th {
+					padding: .375em;
+					border: 1px solid $twoforty-grey;
+					text-align: left;
+				}
+				
+				tr:nth-of-type(odd) {
+					background: $ghost-grey;
+				}
+				
+				th {
+					background: $twoforty-grey;
+					font-weight: bold;
 				}
 			}
 			
