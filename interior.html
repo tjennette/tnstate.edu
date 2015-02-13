@@ -16,37 +16,7 @@
 		<!-- START STYLESHEETS -->
 		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic|Merriweather:300,300italic|Lora:400,400italic" /> <!-- Lato, Merriweather, & Lora fonts Google Web Fonts -->
 		<link rel="stylesheet" href="redesign/flair/css/testing.css" />
-		<!-- [if !IE]><!-->
-		<style>
-		@media
-		only screen and (max-width: 64em) {
-			table, thead, tbody, th, td, tr { 
-				display: block; 
-			}
-			thead tr {
-				position: absolute;
-				top: -9999em;
-				left: -9999em;
-			}
-			tr { border: 1px solid #ccc; }
-			tr + tr { border-top: none; }
-			td {
-				border: none;
-				border-bottom: 1px solid #eee;
-				position: relative;
-			}
-			td:before {
-				position: absolute;
-				float: left;
-				top: .375em;
-				left: .375em;
-				width: 45%;
-				padding-right: 0.625em;
-				white-space: nowrap;
-			}
-		}
-		</style>
-		<!-- <! [endif]-->
+		
 				
 		<!-- START SCRIPTS -->
 		<!-- REPLACE WITH CUSTOM MODERNIZR FILE BEFORE GOING LIVE, CURRENT FILE IS FOR DEVELOPMENT ONLY -->
@@ -126,11 +96,13 @@
 				</ul>
 				
 				<!-- PAGE NAVIGATION -->
-				<div class="left-toggle"><span class="toggle-title">Sample Text</span><img src="redesign/images/svg/hamburger.svg" /></div>
+				<div class="left-toggle">
+					<span class="toggle-title">Sample Text</span><a href="#" class="toggle-side"><img src="redesign/images/svg/hamburger.svg" /></a>
+				</div>
 				<section class="side-nav">
 					<nav>
 						<ul>
-							<li><a href="#" class="mainitem">About TSU</a></li>
+							<li class="mainitem"><a href="#">About TSU</a></li>
 							<li><a href="#">Fast Facts</a></li>
 							<li><a href="#">Our People</a></li>
 							<li><a href="#">Our Mission</a>
@@ -164,29 +136,29 @@
 					<p>Vix ut sonet vivendum. Has ignota volutpat at, utinam iriure tacimates usu eu. An sint scribentur has. Ut noster debitis denique duo.</p>
 					<h2>Paragraph Title</h2>
 					<p>Pri augue facilisis ut, ei eos errem commodo quaeque, hinc nullam utroque est eu. Eu mutat mucius quaerendum pro. Pericula dignissim rationibus ut pro, dicat diceret abhorreant ne sea. Deseruisse philosophia contentiones at qui, his dicam latine consequat eu, vel quot voluptua id. Id vide vidit conclusionemque sed, melius omittam vim ad.</p>
-					<table>
+					<table width="900px">
 						<thead>
 							<tr>
-								<th>First Name</th>
-								<th>Last Name</th>
-								<th>Job Title</th>
+								<th width="300px">First Name</th>
+								<th width="300px">Last Name</th>
+								<th width="300px">Job Title</th>
 							</tr>
 						</thead>
 						<tbody>
 							<tr>
-								<td>Richard</td>
-								<td>Delahaya</td>
-								<td>Director of Media Relations</td>
+								<td width="300px">Richard</td>
+								<td width="300px">Delahaya</td>
+								<td width="300px">Director of Media Relations</td>
 							</tr>
 							<tr>
-								<td>Dawn</td>
-								<td>Rutledge</td>
-								<td>Director of Publications</td>
+								<td width="300px">Dawn</td>
+								<td width="300px">Rutledge</td>
+								<td width="300px">Director of Publications</td>
 							</tr>
 							<tr>
-								<td>John</td>
-								<td>Cross</td>
-								<td>Director of Creative Services</td>
+								<td width="300px">John</td>
+								<td width="300px">Cross</td>
+								<td width="300px">Director of Creative Services</td>
 							</tr>
 						</tbody>
 					</table>

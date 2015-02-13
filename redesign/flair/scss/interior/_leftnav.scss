@@ -66,6 +66,27 @@
 					}
 				}
 				
+				.mainitem {
+					
+					a {
+						background-color: $light-grey-gradient;
+						@include transition (background-color, 0.5s, ease);
+						
+						@media (min-width: 64.0625em) {
+							background-color: white;
+							@include transition (background-color, 0.5s, ease);
+						} 
+						
+						&:hover {
+							background-color: $ghost-grey;
+							
+							@media (min-width: 64.0625em) {
+								background-color: white;
+							}
+						}
+					}
+				}
+				
 				ul {
 					border: none;
 					background-color: $twoforty-grey;
@@ -113,24 +134,6 @@
 							@media (min-width: 64.0625em) {
 								border: none;
 							}
-						}
-					}
-				}
-				
-				.mainitem {
-					background-color: $light-grey-gradient;
-					@include transition (background-color, 0.5s, ease);
-					
-					@media (min-width: 64.0625em) {
-						background-color: white;
-						@include transition (background-color, 0.5s, ease);
-					} 
-					
-					&:hover {
-						background-color: $ghost-grey;
-						
-						@media (min-width: 64.0625em) {
-							background-color: white;
 						}
 					}
 				}

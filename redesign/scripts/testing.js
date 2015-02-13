@@ -80,23 +80,25 @@
 	
 // MOBILE NAVIGATION TOGGLE for INTERIOR LEFT NAV
 	// hide mobile nav if screen is smaller than 640px
-//	if ($(window).width() <= 1024) {
-//		$('section.side-nav').hide();
-//	}
+	if ($(window).width() <= 1024) {
+		$('section.side-nav').hide();
+	}
 	// hide or show mobile nav if screen is resized
-//	$(window).resize(function(){
-//		if ($(window).width() > 640) {
-//			$('#site-header').show();
-//		} 
-//	});
+	$(window).resize(function(){
+		if ($(window).width() > 1024) {
+			$('section.side-nav').show();
+		} 
+	});
 	// toggle mobile nav with '.mobile-header'
-//	$('.toggle-mobile').click(function(){
-//		if ($('#site-header').is(':hidden')){
-//			$('#site-header').slideDown();
-//		} else {
-//			$('#site-header').slideUp();
-//		}
-//	});
+	$('.toggle-side').click(function(){
+		if ($('section.side-nav').is(':hidden')){
+			$('section.side-nav').slideDown();
+		} else {
+			$('section.side-nav').slideUp();
+		}
+	});
+	// label properly
+	$('span.toggle-title').html($('li.mainitem').html());
 	
 // On Page Load Success
 	jQuery(document).ready(function($){

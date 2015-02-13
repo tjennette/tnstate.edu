@@ -137,6 +137,10 @@
 					background: $twoforty-grey;
 					font-weight: bold;
 				}
+				
+				@media (min-width: 64em) {
+					overflow: scroll;
+				}
 			}
 			
 			h1, h2, h3, h4, h5, h6 {

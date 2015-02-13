@@ -1344,6 +1344,24 @@ section.photo-feed .wrapper {
             @media (min-width: 64.0625em) {
               .template-content .wrapper .side-nav nav ul li a {
                 padding: 0; } }
+          .template-content .wrapper .side-nav nav ul li .mainitem a {
+            background-color: #e6e7e8;
+            -webkit-transition: background-color 0.5s ease;
+            -moz-transition: background-color 0.5s ease;
+            -o-transition: background-color 0.5s ease;
+            transition: background-color 0.5s ease; }
+            @media (min-width: 64.0625em) {
+              .template-content .wrapper .side-nav nav ul li .mainitem a {
+                background-color: white;
+                -webkit-transition: background-color 0.5s ease;
+                -moz-transition: background-color 0.5s ease;
+                -o-transition: background-color 0.5s ease;
+                transition: background-color 0.5s ease; } }
+            .template-content .wrapper .side-nav nav ul li .mainitem a:hover {
+              background-color: #fbfbfb; }
+              @media (min-width: 64.0625em) {
+                .template-content .wrapper .side-nav nav ul li .mainitem a:hover {
+                  background-color: white; } }
           .template-content .wrapper .side-nav nav ul li ul {
             border: none;
             background-color: #f0f0f0; }
@@ -1378,24 +1396,6 @@ section.photo-feed .wrapper {
                 @media (min-width: 64.0625em) {
                   .template-content .wrapper .side-nav nav ul li ul li + li {
                     border: none; } }
-          .template-content .wrapper .side-nav nav ul li .mainitem {
-            background-color: #e6e7e8;
-            -webkit-transition: background-color 0.5s ease;
-            -moz-transition: background-color 0.5s ease;
-            -o-transition: background-color 0.5s ease;
-            transition: background-color 0.5s ease; }
-            @media (min-width: 64.0625em) {
-              .template-content .wrapper .side-nav nav ul li .mainitem {
-                background-color: white;
-                -webkit-transition: background-color 0.5s ease;
-                -moz-transition: background-color 0.5s ease;
-                -o-transition: background-color 0.5s ease;
-                transition: background-color 0.5s ease; } }
-            .template-content .wrapper .side-nav nav ul li .mainitem:hover {
-              background-color: #fbfbfb; }
-              @media (min-width: 64.0625em) {
-                .template-content .wrapper .side-nav nav ul li .mainitem:hover {
-                  background-color: white; } }
   .template-content .wrapper .main-content {
     padding: 1em 0;
     float: left;
@@ -1422,6 +1422,9 @@ section.photo-feed .wrapper {
       .template-content .wrapper .main-content table th {
         background: #f0f0f0;
         font-weight: bold; }
+      @media (min-width: 64em) {
+        .template-content .wrapper .main-content table {
+          overflow: scroll; } }
     .template-content .wrapper .main-content h1, .template-content .wrapper .main-content h2, .template-content .wrapper .main-content h3, .template-content .wrapper .main-content h4, .template-content .wrapper .main-content h5, .template-content .wrapper .main-content h6 {
       padding: 1% 0;
       margin: 0; }
