@@ -27,6 +27,7 @@ footer {
 			
 			@media (min-width: 64.0625em) {
 				display: inherit;
+				width: 33%;
 			}
 			
 			@media (min-width: 90.0625em) {
@@ -63,13 +64,14 @@ footer {
 		}
 		
 		section.footer-social {
-			display: none;
-			width: 33%;
-			float: left;
-			padding-top: 1em;
+			width: 100%;
+			float: none;
 			
-			@media (min-width: 90.0625em) {
+			@media (min-width: 64.0625em) {
 				display: inherit;
+				width: 33%;
+				float: left;
+				padding-top: 1em;
 			}
 			
 			ul {
@@ -83,6 +85,15 @@ footer {
 					float: left;
 					min-width: 60px;
 					min-height: 60px;
+					
+					@media (min-width: 40.0625em){
+						max-width: 10%;
+					}
+					
+					@media (min-width: 64.0625em){
+						min-height: 50px;
+						min-width: 50px;
+					}
 					
 					+li {
 						margin-left: 2%;
@@ -116,11 +127,11 @@ footer {
 				
 			}
 			
-			@media (min-width: 64.0625em) {
-				width: 50%;
-			}
+			//@media (min-width: 64.0625em) {
+			//	width: 50%;
+			//}
 			
-			@media (min-width: 90.0625em) {
+			@media (min-width: 64.0625em) {
 				width: 33%;
 			}
 			

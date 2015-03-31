@@ -1251,6 +1251,18 @@ section.photo-feed .wrapper {
   @media (min-width: 64.0625em) {
     .template-content .wrapper {
       width: 60em; } }
+  @media (min-width: 90.0625em) {
+    .template-content .wrapper {
+      float: left;
+      padding: 2em 0 2em 50%;
+      margin-left: -41em; } }
+  .template-content .wrapper h1 strong, .template-content .wrapper h2 strong, .template-content .wrapper h3 strong, .template-content .wrapper h4 strong, .template-content .wrapper h5 strong, .template-content .wrapper h6 strong {
+    font-weight: normal; }
+  .template-content .wrapper blockquote {
+    font-size: 1.25em;
+    font-style: italic;
+    font-style: oblique;
+    font-weight: normal; }
   .template-content .wrapper #crumbTrail {
     font-family: "Lato", Arial, san-serif;
     margin: 0;
@@ -1439,6 +1451,36 @@ section.photo-feed .wrapper {
       .template-content .wrapper .main-content figure figcaption {
         padding: 1% 2% 3%;
         text-align: center; }
+.template-content div#right {
+  background-color: #fbfbfb;
+  overflow: hidden;
+  padding: 1em 2em;
+  box-sizing: border-box;
+  width: 100%; }
+  @media (min-width: 64.0625em) {
+    .template-content div#right {
+      width: 64em;
+      margin: 0 auto; } }
+  @media (min-width: 90.0625em) {
+    .template-content div#right {
+      width: 22em;
+      float: left; } }
+  .template-content div#right div.boxes {
+    text-align: center;
+    max-width: 22em; }
+    @media (min-width: 40.0625em) {
+      .template-content div#right div.boxes {
+        float: left;
+        margin: .5em;
+        text-align: left; } }
+  .template-content div#right h1 {
+    margin: 0;
+    padding: .5em 0 1em;
+    font-size: 1.875em; }
+  .template-content div#right ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
 
 footer {
   width: 100%;
@@ -1464,7 +1506,8 @@ footer {
       padding-top: 1em; }
       @media (min-width: 64.0625em) {
         footer div.wrapper section.footer-sitemap {
-          display: inherit; } }
+          display: inherit;
+          width: 33%; } }
       @media (min-width: 90.0625em) {
         footer div.wrapper section.footer-sitemap {
           width: 33%; } }
@@ -1487,13 +1530,14 @@ footer {
           footer div.wrapper section.footer-sitemap ul li + li {
             margin-top: .25em; }
     footer div.wrapper section.footer-social {
-      display: none;
-      width: 33%;
-      float: left;
-      padding-top: 1em; }
-      @media (min-width: 90.0625em) {
+      width: 100%;
+      float: none; }
+      @media (min-width: 64.0625em) {
         footer div.wrapper section.footer-social {
-          display: inherit; } }
+          display: inherit;
+          width: 33%;
+          float: left;
+          padding-top: 1em; } }
       footer div.wrapper section.footer-social ul {
         margin: 0;
         padding: 0; }
@@ -1504,6 +1548,13 @@ footer {
           float: left;
           min-width: 60px;
           min-height: 60px; }
+          @media (min-width: 40.0625em) {
+            footer div.wrapper section.footer-social ul li {
+              max-width: 10%; } }
+          @media (min-width: 64.0625em) {
+            footer div.wrapper section.footer-social ul li {
+              min-height: 50px;
+              min-width: 50px; } }
           footer div.wrapper section.footer-social ul li + li {
             margin-left: 2%; }
           footer div.wrapper section.footer-social ul li a img {
@@ -1520,9 +1571,6 @@ footer {
       float: left;
       padding-top: 1em; }
       @media (min-width: 64.0625em) {
-        footer div.wrapper section.footer-contact {
-          width: 50%; } }
-      @media (min-width: 90.0625em) {
         footer div.wrapper section.footer-contact {
           width: 33%; } }
       footer div.wrapper section.footer-contact a {
